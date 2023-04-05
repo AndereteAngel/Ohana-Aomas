@@ -1,0 +1,173 @@
+* {
+   margin: 0px;
+   padding: 0px;
+   box-sizing: border-box;
+}
+
+html {
+   font-size: 2rem;
+   color: palevioletred;
+}
+
+
+body {
+   background-image: url(../img/fondo6.jpg);
+   margin: 0px;
+   padding: 0px;
+}
+
+.row {
+   justify-content: center;
+}
+
+.navbar {
+   font-size: 0.5rem;
+}
+
+.nav-item {
+   background-color: palevioletred;
+}
+
+.carousel-item {
+   height: 400px;
+   width: 400px;
+   text-align: center;
+   font-size: 1rem;
+   align-items: center;
+}
+
+.carouselExampleIndicators {
+   justify-content: space-around;
+}
+
+h1 {
+   font-size: 2rem;
+   text-align: center;
+   color: palevioletred;
+}
+
+h2 {
+   font-size: 1.5rem;
+   color: palevioletred;
+   text-align: center;
+}
+
+h3 {
+   text-align: center;
+   font-size: 1rem;
+   color: palevioletred;
+}
+
+h4 {
+   font-size: 0.5rem;
+   color: palevioletred;
+}
+
+p {
+   font-size: 0.5rem;
+   color: white
+}
+
+.imgmain {
+   width: 300px;
+
+}
+
+.navfooter {
+   display: inline;
+}
+
+article {
+   padding: 0px;
+   margin: 0px;
+}
+
+
+
+/*
+body {
+   background-color: black;
+}
+
+.padre {
+   display: grid;
+   grid-template-columns: 280px;
+   grid-template-rows: repeat(3/1fr);
+   margin: 5px;
+   align-items: center;
+   justify-items: center;
+}
+
+.caja2 {
+   display: inline-flex;
+   font-size: 12px;
+   text-overflow: ellipsis;
+   margin: 5px;
+   gap: 10px;
+   text-decoration: none;
+   list-style: none;
+   align-items: flex-start;
+}
+
+.caja1 {
+   grid-column: 1/2;
+   justify-self: center;
+   width: 10px;
+   object-fit: contain;
+   margin-left: 20px;
+
+}
+
+.logo {
+   align-items: center;
+   width: 280px;
+   border: solid;
+
+}
+
+.frase {
+   width: 280px;
+   border: solid;
+}
+
+main {
+   margin: 10px;
+   padding: 5px;
+   color: palevioletred;
+   font-size: 16px;
+   width: 280px;
+   text-align: center;
+}
+
+h1 {
+   text-align: center;
+   margin: 15px;
+}
+
+p {
+   text-overflow: ellipsis
+}
+
+.caja1main {
+   margin-top: 20px;
+   text-align: center;
+}
+
+.foto {
+   width: 200px;
+   height: 200px;
+   margin-bottom: 10px;
+   margin-top: 10px;
+}
+
+h3 {
+   margin-top: 20px;
+}
+
+h4 {
+   margin-top: 10px;
+}
+
+.foto2 {
+   margin-left: 0px;
+   object-fit: contain;
