@@ -18,52 +18,58 @@
         rel="stylesheet">
 </head>
 
-<body class="bodyhome container">
-    <header class="container">
-        <div class="row">
-            <div class="col-12">
-                <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                    <div class="container-fluid">
-                        <a class="navbar-brand" href="#">Ohana Aromas</a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                            aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarNav">
-                            <ul class="navbar-nav">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="../pages/home.html">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="../pages/nuestrosproductos.html">Nuestros productos</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="../pages/pedidos.html">Pedidos</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="../pages/list.html">Lista de precios</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="../pages/contacto.html">Contacto</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="../pages/saphirus.html">Productos S</a>
-                                </li>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/nuestrosproductos.html">Nuestros productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/pedidos.html">Pedidos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/list.html">Lista de precios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/saphirus.html">Productos S</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                productos S
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Aerosoles</a></li>
+                                <li><a class="dropdown-item" href="#">Difusores</a></li>
+                                <li><a class="dropdown-item" href="#">textiles</a></li>
                             </ul>
-                        </div>
-                    </div>
-                </nav>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
+        </nav>
     </header>
 
     <main>
         <section class="container carrusel">
-            <h1 class="carrusel-titulo"> Home </h1>
-
+            <h1 class="title"> Home </h1>
             <div class="row">
-                <article class="carrusel col-12">
+                <article class="carrusel">
                     <h2 class="carrusel-titulo"> Conocenos</h2>
                     <div id="carouselExampleIndicators" class="carousel slide">
                         <div class="carousel-indicators">
@@ -106,75 +112,74 @@
                 <article class="conteiner">
                     <div class="row">
                         <div class="art col-12">Quienes somos</div>
-                        <p class="art-descripcion">No hay generador de recuerdos más potente que una fragancia. Esto
+                        <p class="art-descripcion">No hay generador de recuerdos más potente que una fragancia.
+                            Esto
                             se debe a
                             nuestra memoria
                             olfativa,
                             que
                             nos permite asociar un aroma a un recuerdo, un momento o una persona.
 
-                            El “déjà vu" olfativo no solo nos hace recordar momentos especiales, también nos hace
+                            El “déjà vu" olfativo no solo nos hace recordar momentos especiales, también nos
+                            hace
                             desear
                             ese
                             aroma
-                            que en ocasiones, a lo largo del día, se disipa en el ambiente pero no en la memoria.
+                            que en ocasiones, a lo largo del día, se disipa en el ambiente pero no en la
+                            memoria.
                         </p>
                     </div>
                 </article>
             </div>
 
             <section class="conteiner">
-                <div class="card row">
-                    <div class="card col-12 col-md-6 col-xl-3">
-                        <article>
-                            <div class="card-titulo">Nuestros Productos.</div>
-                            <div data-aos="zoom-in-left">
-                                <img class="card-img" src="../img/varios2.jpg" alt="todos los productos Saphirus">
-                            </div>
-                            <div class="card-descripcion">Todas las variedades de fragancias.</div>
-                        </article>
-                    </div>
-
-                    <div class="card row">
-                        <div class="card col-12 col-md-6 col-xl-3">
-                            <article>
-                                <div class="card-titulo">Listas de precios actualizadas.</div>
-                                <div data-aos="zoom-in-left">
-                                    <img class="card-img" src="../img/precios1.png"
-                                        alt="venta de productos por mayor y por menor">
-                                </div>
-                                <div class="card-descripcion">Conoce nuestros valores.</div>
-                            </article>
+                <div class="row card">
+                    <article class="col-12 col-md-6 col-lg-4">
+                        <div class="card-titulo">Nuestros Productos.</div>
+                        <div data-aos="zoom-in-left">
+                            <img class="card-img" src="../img/varios2.jpg" alt="todos los productos Saphirus">
                         </div>
-                    </div>
+                        <div class="card-descripcion">Todas las variedades de fragancias.</div>
+                    </article>
+                </div>
 
-                    <div class="card row">
-                        <div class="card col-12 col-md-6 col-xl-3">
-                            <article>
-                                <div class="card-titulo">Pedidos.</div>
-                                <div data-aos="zoom-in-left">
-                                    <img class="card-img" src="../img/pedidos1.png" alt="pedidos">
-                                </div>
-                                <div class="card-descripcion">Podes hacer tu pedido. Simula tu pedido q nosotros lo
-                                    cotizamos.</div>
-                            </article>
+                <div class="row card">
+                    <article class="col-12 col-md-6 col-lg-4">
+                        <div class="card-titulo">Listas de precios actualizadas.</div>
+                        <div data-aos="zoom-in-left">
+                            <img class="card-img" src="../img/precios1.png"
+                                alt="venta de productos por mayor y por menor">
                         </div>
-                    </div>
+                        <div class="card-descripcion">Conoce nuestros valores.</div>
+                    </article>
+                </div>
+                </div>
 
-                    <div class="card row">
-                        <div class="card col-12 col-md-6 col-xl-3">
-                            <article>
-                                <div class="card-titulo">Contactate con nosotros.</div>
-                                <div data-aos="zoom-in-left">
-                                    <img class="card-img" src="../img/contacto1.jpg" alt="dudas y sugerencias">
-                                </div>
-                                <div class="card-descripcion">Pueden contactarse con nostros.</div>
-                                <p>Para dudas o sugerencias mas abajo encontras todos nuestras redes o bien hacerlo por
-                                    nuestra
-                                    mensajeria privada.</p>
-                            </article>
+                <div class="row card">
+                    <article class="col-12 col-md-6 col-lg-4">
+                        <div class="card-titulo">Pedidos.</div>
+                        <div data-aos="zoom-in-left">
+                            <img class="card-img" src="../img/pedidos1.png" alt="pedidos">
                         </div>
-                    </div>
+                        <div class="card-descripcion">Podes hacer tu pedido. Simula tu pedido q nosotros lo
+                            cotizamos.</div>
+                    </article>
+                </div>
+                </div>
+
+                <div class="row card">
+                    <article class="col-12 col-md-6 col-lg-4">
+                        <div class="card-titulo">Contactate con nosotros.</div>
+                        <div data-aos="zoom-in-left"><img class="card-img" src="../img/contacto1.jpg"
+                                alt="dudas y sugerencias">
+                        </div>
+                        <div class="card-descripcion">Pueden contactarse con nostros.</div>
+                        <p>Para dudas o sugerencias mas abajo encontras todos nuestras redes o bien hacerlo por
+                            nuestra
+                            mensajeria privada.</p>
+                    </article>
+                </div>
+                </div>
                 </div>
             </section>
     </main>
@@ -182,7 +187,7 @@
     <footer class="navfooter">
         <ul class="nav flex-row">
             <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Instagram</a>
+                <a class="nav-link" href="#">Instagram</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Facebock</a>

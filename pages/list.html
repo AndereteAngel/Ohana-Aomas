@@ -18,116 +18,120 @@
         rel="stylesheet">
 </head>
 
-<body class="container-fluid">
-    <header class="container-fluid">
-        <div class="row col-12">
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#">Ohana Aromas</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link" href="../pages/home.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="../pages/nuestrosproductos.html">Nuestros productos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="../pages/pedidos.html">Pedidos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="../pages/list.html">Lista de precios</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="../pages/contacto.html">Contacto</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="../pages/saphirus.html">Productos S</a>
-                            </li>
-                        </ul>
-                    </div>
+<body class="bodyhome container">
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/nuestrosproductos.html">Nuestros productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/pedidos.html">Pedidos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/list.html">Lista de precios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/saphirus.html">Productos S</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                productos S
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Aerosoles</a></li>
+                                <li><a class="dropdown-item" href="#">Difusores</a></li>
+                                <li><a class="dropdown-item" href="#">textiles</a></li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
-            </nav>
-        </div>
+            </div>
+        </nav>
+    </header>
 
         <main>
             <section class="container-fluid">
                 <div class="row">
-                    <h1>Lista de Precios</h1>
-                    <table class="tablaprecios">
-                        <tr>
-                            <th>Nuestros productos</th>
-                            <th>Unidad</th>
-                            <th>x mayor (12 productos o más)</th>
+                    <h1 class="title">Lista de Precios</h1>
+                    <table class="list">
+                        <tr class="list-cabecera">
+                            <th class="list-titulo">Nuestros productos</th>
+                            <th class="list-titulo">Unidad</th>
+                            <th class="list-titulo">x mayor (12 productos o más)</th>
                         </tr>
 
                         <tr>
-                            <td>Aerosoles de ambiente</td>
-                            <td>$780</td>
-                            <td>$580</td>
+                            <td class="list-y">Aerosoles de ambiente</td>
+                            <td class="list-price">$780</td>
+                            <td class="list-price">$580</td>
                         </tr>
 
                         <tr>
-                            <td>Difusores ambientales</td>
-                            <td>$800</td>
-                            <td>$600</td>
+                            <td class="list-y">Difusores ambientales</td>
+                            <td class="list-price">$800</td>
+                            <td class="list-price">$600</td>
                         </tr>
 
                         <tr>
-                            <td>Aromatizador textil</td>
-                            <td>600</td>
-                            <td>$400</td>
+                            <td class="list-y">Aromatizador textil</td>
+                            <td class="list-price">600</td>
+                            <td class="list-price">$400</td>
                         </tr>
 
                         <tr>
-                            <td>Route66</td>
-                            <td>$780</td>
-                            <td>$580</td>
+                            <td class="list-y">Route66</td>
+                            <td class="list-price">$780</td>
+                            <td class="list-price">$580</td>
                         </tr>
 
                         <tr>
-                            <td>Tarjetas Aromaticas</td>
-                            <td>$780</td>
-                            <td>$580</td>
+                            <td class="list-y">Tarjetas Aromaticas</td>
+                            <td class="list-price">$780</td>
+                            <td class="list-price">$580</td>
                         </tr>
 
                         <tr>
-                            <td>Home Spray</td>
-                            <td>$780</td>
-                            <td>$580</td>
+                            <td class="list-y">Home Spray</td>
+                            <td class="list-price">$780</td>
+                            <td class="list-price" >$580</td>
                         </tr>
 
                         <tr>
-                            <td>Esencias Aromaticas</td>
-                            <td>$780</td>
-                            <td>$580</td>
+                            <td class="list-y">Esencias Aromaticas</td>
+                            <td class="list-price">$780</td>
+                            <td class="list-price">$580</td>
                         </tr>
 
                         <tr>
-                            <td>Equipos Aromatizadores</td>
-                            <td>$780</td>
-                            <td>$580</td>
+                            <td class="list-y">Equipos Aromatizadores</td>
+                            <td class="list-price">$780</td>
+                            <td class="list-price">$580</td>
                         </tr>
                     </table>
                 </div>
             </section>
-
-            <div>
-                <p>Los precios se encuentran actualizados al dia de la fecha.</p>
-                <figure>
-                    <img src="../img/listadepreciosfin.jpg" alt="lista de precios">
-                </figure>
-            </div>
         </main>
 
         <footer class="navfooter">
-            <ul class="nav flex-column">
+            <ul class="nav flex-row">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Instagram</a>
+                    <a class="nav-link" href="#">Instagram</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Facebock</a>
@@ -140,7 +144,7 @@
                 </li>
             </ul>
         </footer>
-
+    
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
             crossorigin="anonymous"></script>
@@ -148,6 +152,6 @@
         <script>
             AOS.init();
         </script>
-</body>
-
-</html>
+    </body>
+    
+    </html>

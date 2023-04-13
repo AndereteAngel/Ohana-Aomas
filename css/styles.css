@@ -4,7 +4,6 @@
    box-sizing: border-box;
 }
 
-
 html {
    font-size: 2rem;
    color: palevioletred;
@@ -13,17 +12,27 @@ html {
 /*barra de navegacion*/
 
 .navbar {
+   display: flex;
+   justify-items: end;
+   align-items: center;
    background-color: violet;
    color: rgb(16, 17, 17);
    list-style: none;
    text-decoration: none;
-   font-size: 20px;
+   font-size: 0.5rem;
    border: solid;
-   width: 260px;
    margin-left: 10px;
-   margin-right: 0;
+   display: inline-flex;
 }
 
+.navbar-title {
+   background-color: violet;
+   font-size: 0.5rem;
+   border: solid;
+   border-radius: 10%;
+   margin-left: 40px;
+   
+}
 .navbar-logo {
    list-style: none;
    text-decoration: none;
@@ -42,7 +51,6 @@ body {
 form {
    border: solid;
    background-color: blueviolet;
-   border: solid;
    text-align: center;
    margin-top: 30px;
    font-size: 1rem;
@@ -60,6 +68,7 @@ form {
    margin-left: 10px;
    text-align: center;
    justify-content: center;
+   border-radius: 10%;
 }
 
 /*footer*/
@@ -72,6 +81,7 @@ form {
    font-size: 0.75rem;
    width: 260px;
    margin-top: 30px;
+   display: inline;
 }
 
 /*carrusel home*/
@@ -88,14 +98,22 @@ form {
    padding: 0px;
 }
 
+.carrusel-title {
+   font-size: 0.4rem;
+   margin: 10px;
+   text-align: center;
+}
+
 .carrusel-img {
-   width: 300px;
+   width: 250px;
    height: 200px;
 }
 
 .art-descripcion {
    font-size: 0.4rem;
    margin: 10px;
+   text-align: center;
+   width: 350px;
 }
 
 .art {
@@ -105,15 +123,25 @@ form {
 /*Nuestros productos*/
 
 .card {
-   margin-left: 3px;
+   margin-left: 50px;
+   width: 250px;
+   font-size: ;
 }
 
 .cardproducto {
    color: palevioletred;
 }
 
+.card-titulo {
+   font: size 0.75rem; ;
+}
+
 .cardproducto-img {
    width: 250px;
+}
+
+.card-descripcion {
+   font-size: 0.5rem;
 }
 
 .title {
@@ -124,3 +152,44 @@ form {
    text-align: center;
 }
 
+.cardaero {
+   width: 250px;
+   height: 200px;
+   margin: 10px;
+   padding: 0px;
+}
+
+.cardaero-title {
+   text-align: center;
+   color: palevioletred;
+   font-size: 1rem;
+}
+
+.cardaero-price {
+   text-align: center;
+   color: palevioletred;
+   font-size: 1rem;
+}
+
+/*list price table*/
+
+.list {
+   text-align: center;
+   color: palevioletred;
+   font-size: 0.5rem;
+   border: solid;
+}
+
+.list-title {
+   text-align: center;
+   color: palevioletred;
+   font-size: 0.75rem;
+   border: solid;
+}
+
+/* contactos */
+
+.input {
+   margin-bottom: 10px;
+   font-size: 0.5rem;
+}
