@@ -8,18 +8,6 @@
       {
         "label": "off"
       }
-    ],
-    "axe/keyboard": [
-      "default",
-      {
-        "nested-interactive": "off"
-      }
-    ],
-    "axe/text-alternatives": [
-      "default",
-      {
-        "image-alt": "off"
-      }
     ]
   }
 }
