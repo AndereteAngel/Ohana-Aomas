@@ -31,8 +31,9 @@ html {
    border: solid;
    border-radius: 10%;
    margin-left: 40px;
-   
+
 }
+
 .navbar-logo {
    list-style: none;
    text-decoration: none;
@@ -85,7 +86,7 @@ form {
 }
 
 /*carrusel home*/
-.bodyhome{
+.bodyhome {
    padding: 0px;
    font-size: 0.5rem;
    justify-items: center;
@@ -125,7 +126,6 @@ form {
 .card {
    margin-left: 50px;
    width: 250px;
-   font-size: ;
 }
 
 .cardproducto {
@@ -133,7 +133,8 @@ form {
 }
 
 .card-titulo {
-   font: size 0.75rem; ;
+   font: size 0.75rem;
+   ;
 }
 
 .cardproducto-img {
