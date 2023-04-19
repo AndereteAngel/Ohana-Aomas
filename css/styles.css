@@ -1,196 +1,190 @@
 * {
-   margin: 0px;
-   padding: 0px;
-   box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
 html {
-   font-size: 2rem;
-   color: palevioletred;
-}
-
-/*barra de navegacion*/
-
-.navbar {
-   display: flex;
-   justify-items: end;
-   align-items: center;
-   background-color: violet;
-   color: rgb(16, 17, 17);
-   list-style: none;
-   text-decoration: none;
-   font-size: 0.5rem;
-   border: solid;
-   margin-left: 10px;
-   display: inline-flex;
-}
-
-.navbar-title {
-   background-color: violet;
-   font-size: 0.5rem;
-   border: solid;
-   border-radius: 10%;
-   margin-left: 40px;
-
-}
-
-.navbar-logo {
-   list-style: none;
-   text-decoration: none;
-   background-color: violet;
-   color: rgb(16, 17, 17);
-   border: solid;
-   font-size: 0.75rem;
+  font-size: 2rem;
+  color: palevioletred;
 }
 
 body {
-   background-image: url(../img/fondo6.jpg);
+  background-image: url(../img/fondo6.jpg);
 }
 
-/* formulario de ingreso*/
+nav {
+  display: flex;
+  justify-items: end;
+  align-items: center;
+  background-color: violet;
+  color: rgb(16, 17, 17);
+  list-style: none;
+  text-decoration: none;
+  font-size: 0.5rem;
+  border: solid;
+  margin-left: 10px;
+  display: inline-flex;
+}
+nav .navbar {
+  display: flex;
+  justify-items: end;
+  align-items: center;
+  background-color: violet;
+  color: rgb(16, 17, 17);
+  list-style: none;
+  text-decoration: none;
+  font-size: 0.5rem;
+  border: solid;
+  margin-left: 10px;
+  display: inline-flex;
+}
+nav .navbar-title {
+  background-color: violet;
+  font-size: 0.5rem;
+  border: solid;
+  border-radius: 10%;
+  margin-left: 40px;
+}
+nav .navbar-logo {
+  list-style: none;
+  text-decoration: none;
+  background-color: violet;
+  color: rgb(16, 17, 17);
+  border: solid;
+  font-size: 0.75rem;
+}
+nav:hover {
+  color: brown;
+}
 
 form {
-   border: solid;
-   background-color: blueviolet;
-   text-align: center;
-   margin-top: 30px;
-   font-size: 1rem;
-   width: 260px;
-   align-items: center;
+  border: solid;
+  background-color: blueviolet;
+  text-align: center;
+  margin-top: 30px;
+  font-size: 1rem;
+  width: 260px;
+  align-items: center;
 }
 
 .form-btn {
-   margin-bottom: 30px;
-   margin-top: 30px;
-   font-size: 0.75rem;
-   list-style: none;
-   text-decoration: none;
-   width: 50px;
-   margin-left: 10px;
-   text-align: center;
-   justify-content: center;
-   border-radius: 10%;
-}
-
-/*footer*/
-
-.nav-footer {
-   border: solid;
-   list-style: none;
-   display: inline-flex;
-   background-color: violet;
-   font-size: 0.75rem;
-   width: 260px;
-   margin-top: 30px;
-   display: inline;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  font-size: 0.75rem;
+  list-style: none;
+  text-decoration: none;
+  width: 50px;
+  margin-left: 10px;
+  text-align: center;
+  justify-content: center;
+  border-radius: 10%;
 }
 
 /*carrusel home*/
 .bodyhome {
-   padding: 0px;
-   font-size: 0.5rem;
-   justify-items: center;
+  padding: 0px;
+  font-size: 0.5rem;
+  justify-items: center;
 }
 
 .carrusel {
-   color: palevioletred;
-   text-align: center;
-   margin: 0px;
-   padding: 0px;
+  color: palevioletred;
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
 }
 
 .carrusel-title {
-   font-size: 0.4rem;
-   margin: 10px;
-   text-align: center;
+  font-size: 0.4rem;
+  margin: 10px;
+  text-align: center;
 }
 
 .carrusel-img {
-   width: 250px;
-   height: 200px;
+  width: 250px;
+  height: 200px;
 }
 
 .art-descripcion {
-   font-size: 0.4rem;
-   margin: 10px;
-   text-align: center;
-   width: 350px;
+  font-size: 0.4rem;
+  margin: 10px;
+  text-align: center;
+  width: 350px;
 }
 
 .art {
-   text-align: center;
-}
-
-/*Nuestros productos*/
-
-.card {
-   margin-left: 50px;
-   width: 250px;
-}
-
-.cardproducto {
-   color: palevioletred;
-}
-
-.card-titulo {
-   font: size 0.75rem;
-   ;
-}
-
-.cardproducto-img {
-   width: 250px;
-}
-
-.card-descripcion {
-   font-size: 0.5rem;
-}
-
-.title {
-   background-color: blueviolet;
-   font-size: 1rem;
-   border: solid;
-   margin-top: 30px;
-   text-align: center;
-}
-
-.cardaero {
-   width: 250px;
-   height: 200px;
-   margin: 10px;
-   padding: 0px;
-}
-
-.cardaero-title {
-   text-align: center;
-   color: palevioletred;
-   font-size: 1rem;
-}
-
-.cardaero-price {
-   text-align: center;
-   color: palevioletred;
-   font-size: 1rem;
-}
-
-/*list price table*/
-
-.list {
-   text-align: center;
-   color: palevioletred;
-   font-size: 0.5rem;
-   border: solid;
-}
-
-.list-title {
-   text-align: center;
-   color: palevioletred;
-   font-size: 0.75rem;
-   border: solid;
+  text-align: center;
 }
 
 /* contactos */
-
 .input {
-   margin-bottom: 10px;
-   font-size: 0.5rem;
+  margin-bottom: 10px;
+  font-size: 0.5rem;
 }
+
+/*list price table*/
+.list {
+  text-align: center;
+  color: palevioletred;
+  font-size: 0.5rem;
+  border: solid;
+}
+
+.list-title {
+  text-align: center;
+  color: palevioletred;
+  font-size: 0.75rem;
+  border: solid;
+}
+
+/*Nuestros productos*/
+.card {
+  margin-left: 50px;
+  width: 250px;
+}
+
+.cardproducto {
+  color: palevioletred;
+}
+
+.card-titulo {
+  font: size 0.75rem;
+}
+
+.cardproducto-img {
+  width: 250px;
+}
+
+.card-descripcion {
+  font-size: 0.5rem;
+}
+
+.title {
+  background-color: blueviolet;
+  font-size: 1rem;
+  border: solid;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.cardaero {
+  width: 250px;
+  height: 200px;
+  margin: 10px;
+  padding: 0px;
+}
+
+.cardaero-title {
+  text-align: center;
+  color: palevioletred;
+  font-size: 1rem;
+}
+
+.cardaero-price {
+  text-align: center;
+  color: palevioletred;
+  font-size: 1rem;
+}
+
+/*# sourceMappingURL=styles.css.map */

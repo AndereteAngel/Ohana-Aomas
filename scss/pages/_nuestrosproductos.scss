@@ -1,0 +1,51 @@
+/*Nuestros productos*/
+
+.card {
+    margin-left: 50px;
+    width: 250px;
+ }
+ 
+ .cardproducto {
+    color: palevioletred;
+ }
+ 
+ .card-titulo {
+    font: size 0.75rem;
+    ;
+ }
+ 
+ .cardproducto-img {
+    width: 250px;
+ }
+ 
+ .card-descripcion {
+    font-size: 0.5rem;
+ }
+ 
+ .title {
+    background-color: blueviolet;
+    font-size: 1rem;
+    border: solid;
+    margin-top: 30px;
+    text-align: center;
+ }
+ 
+ .cardaero {
+    width: 250px;
+    height: 200px;
+    margin: 10px;
+    padding: 0px;
+ }
+ 
+ .cardaero-title {
+    text-align: center;
+    color: palevioletred;
+    font-size: 1rem;
+ }
+ 
+ .cardaero-price {
+    text-align: center;
+    color: palevioletred;
+    font-size: 1rem;
+ }
+ 

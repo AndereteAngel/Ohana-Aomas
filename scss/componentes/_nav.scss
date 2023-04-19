@@ -1,0 +1,49 @@
+nav {
+   display: flex;
+   justify-items: end;
+   align-items: center;
+   background-color: violet;
+   color: rgb(16, 17, 17);
+   list-style: none;
+   text-decoration: none;
+   font-size: 0.5rem;
+   border: solid;
+   margin-left: 10px;
+   display: inline-flex;
+
+   .navbar {
+      display: flex;
+      justify-items: end;
+      align-items: center;
+      background-color: violet;
+      color: rgb(16, 17, 17);
+      list-style: none;
+      text-decoration: none;
+      font-size: 0.5rem;
+      border: solid;
+      margin-left: 10px;
+      display: inline-flex;
+   }
+
+   .navbar-title {
+      background-color: violet;
+      font-size: 0.5rem;
+      border: solid;
+      border-radius: 10%;
+      margin-left: 40px;
+
+   }
+
+   .navbar-logo {
+      list-style: none;
+      text-decoration: none;
+      background-color: violet;
+      color: rgb(16, 17, 17);
+      border: solid;
+      font-size: 0.75rem;
+   }
+
+   &:hover {
+color:brown
+   }
+}
