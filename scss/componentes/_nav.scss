@@ -1,5 +1,5 @@
 nav {
-   display: flex;
+
    justify-items: end;
    align-items: center;
    background-color: violet;
@@ -8,11 +8,10 @@ nav {
    text-decoration: none;
    font-size: 0.5rem;
    border: solid;
-   margin-left: 10px;
    display: inline-flex;
 
    .navbar {
-      display: flex;
+     
       justify-items: end;
       align-items: center;
       background-color: violet;
@@ -41,9 +40,5 @@ nav {
       color: rgb(16, 17, 17);
       border: solid;
       font-size: 0.75rem;
-   }
-
-   &:hover {
-color:brown
    }
 }

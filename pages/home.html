@@ -45,18 +45,18 @@
                         <li class="nav-item">
                             <a class="nav-link" href="../pages/contacto.html">Contacto</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../pages/saphirus.html">Productos S</a>
-                        </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
                                 productos S
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Aerosoles</a></li>
-                                <li><a class="dropdown-item" href="#">Difusores</a></li>
-                                <li><a class="dropdown-item" href="#">textiles</a></li>
+                                <li><a class="dropdown-item" href="./aerosoloes.html">Aerosoles</a></li>
+                                <li><a class="dropdown-item" href="./auto.html">Auto</a></li>
+                                <li><a class="dropdown-item" href="./difusores.html">Difusores</a></li>
+                                <li><a class="dropdown-item" href="./equipos.html">Equipos</a></li>
+                                <li><a class="dropdown-item" href="./tarjetas.html">Tarjetas</a></li>
+                                <li><a class="dropdown-item" href="./textiles.html">Textiles</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -66,52 +66,40 @@
     </header>
 
     <main>
-        <section class="container carrusel">
+        <section class="container-fluid carrusel">
             <h1 class="title"> Home </h1>
             <div class="row">
                 <article class="carrusel">
-                    <h2 class="carrusel-titulo"> Conocenos</h2>
-                    <div id="carouselExampleIndicators" class="carousel slide">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                                class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                                aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                                aria-label="Slide 3"></button>
-                        </div>
+                    <h2 class="titulo-carrusel">Conocenos</h2>
+                    <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <h4>Aromas Florales.</h4>
-                                <img class="carrusel-img" src="../img/aromas.jpg" alt="varios">
-                            </div>
-
-                            <div class="carousel-item">
-                                <h4>Aromas Simil.</h4>
-                                <img class="carrusel-img" src="../img/bamboo1.jpg" alt="varios2">
-
+                                <img src="../img/aromas.jpg" class="d-block w-100" alt="varios">
                             </div>
                             <div class="carousel-item">
-                                <h4>Aromas Citricos y frutales.</h4>
-                                <img class="carrusel-img" src="../img/Citricos.jpg" alt="varios3">
-
+                                <img src="../img/bamboo1.jpg" class="d-block w-100" alt="varios2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../img/Citricos.jpg" class="d-block w-100" alt="varios3">
                             </div>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide"
                             data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Previous</span>
                         </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide"
                             data-bs-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Next</span>
                         </button>
+                    </div>
+
                 </article>
 
-                <article class="conteiner">
+                <article class="container-fluid">
                     <div class="row">
-                        <div class="art col-12">Quienes somos</div>
+                        <div class="art">Quienes somos</div>
                         <p class="art-descripcion">No hay generador de recuerdos más potente que una fragancia.
                             Esto
                             se debe a
@@ -132,8 +120,8 @@
                 </article>
             </div>
 
-            <section class="conteiner">
-                <div class="row card">
+            <section class="container">
+                <div class="row">
                     <article class="col-12 col-md-6 col-lg-4">
                         <div class="card-titulo">Nuestros Productos.</div>
                         <div data-aos="zoom-in-left">
@@ -141,9 +129,7 @@
                         </div>
                         <div class="card-descripcion">Todas las variedades de fragancias.</div>
                     </article>
-                </div>
 
-                <div class="row card">
                     <article class="col-12 col-md-6 col-lg-4">
                         <div class="card-titulo">Listas de precios actualizadas.</div>
                         <div data-aos="zoom-in-left">
@@ -152,10 +138,7 @@
                         </div>
                         <div class="card-descripcion">Conoce nuestros valores.</div>
                     </article>
-                </div>
-                </div>
 
-                <div class="row card">
                     <article class="col-12 col-md-6 col-lg-4">
                         <div class="card-titulo">Pedidos.</div>
                         <div data-aos="zoom-in-left">
@@ -164,11 +147,8 @@
                         <div class="card-descripcion">Podes hacer tu pedido. Simula tu pedido q nosotros lo
                             cotizamos.</div>
                     </article>
-                </div>
-                </div>
 
-                <div class="row card">
-                    <article class="col-12 col-md-6 col-lg-4">
+                    <article article class="col-12 col-md-6 col-lg-4">
                         <div class="card-titulo">Contactate con nosotros.</div>
                         <div data-aos="zoom-in-left"><img class="card-img" src="../img/contacto1.jpg"
                                 alt="dudas y sugerencias">
@@ -178,8 +158,6 @@
                             nuestra
                             mensajeria privada.</p>
                     </article>
-                </div>
-                </div>
                 </div>
             </section>
     </main>
