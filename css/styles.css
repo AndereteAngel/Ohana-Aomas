@@ -33,6 +33,10 @@ img {
   width: 100px;
   margin: 0;
 }
+.card img {
+  width: 280px;
+}
+
 .titulo {
   text-align: center;
 }
@@ -137,7 +141,7 @@ main button {
   margin: 10px;
   text-decoration: none;
   background-color: palevioletred;
-  width: 100px;
+  width: 200px;
   color: black;
 }
 
