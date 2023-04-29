@@ -36,18 +36,21 @@ img {
 .card img {
   width: 280px;
 }
-
-.titulo {
+.card .titulo {
   text-align: center;
 }
 
 .cardproducto {
-  width: 250px;
-  height: auto;
+  width: 200px;
+  height: 100px;
+  margin: 10px;
+}
+.cardproducto .img {
   margin: 10px;
 }
 .cardproducto .title {
   height: 50px;
+  font-size: 0.75rem;
 }
 
 nav {
@@ -225,6 +228,11 @@ p {
   font-size: 1rem;
 }
 
+.art {
+  border: solid black;
+  display: contents;
+}
+
 .imgpedidos {
   width: 250px;
   height: 100px;
@@ -246,17 +254,35 @@ body {
   background-image: url(../img/fondo6.jpg);
 }
 
-.titulopro {
-  align-items: center;
-  color: palevioletred;
-  font-size: 1rem;
+/*class:
+artaero
+artaero-titulo
+artaero-img
+arta*/
+.artaero {
+  background-color: aqua;
+  margin: 5px;
+  border: solid black;
+  display: inline-block;
+}
+.artaero .artaero-titulo {
+  font-size: 0.75rem;
 }
 
-.cardproducto-img {
-  width: 350px;
-  height: 200px;
-  margin: 10px;
-  border: solid;
+.arta {
+  list-style: none;
+  text-decoration: none;
+  color: aqua;
+  background-color: black;
+  border: solid aqua;
+  font-size: 0.5rem;
+}
+
+.arta:hover {
+  font-size: 0.75rem;
+  background-color: aqua;
+  color: black;
+  border: solid black;
 }
 
 /*# sourceMappingURL=styles.css.map */

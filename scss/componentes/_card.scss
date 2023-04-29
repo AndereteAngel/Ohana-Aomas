@@ -5,22 +5,29 @@
     margin: 0;
 
     img {
-width: 280px;
+        width: 280px;
     }
-    
-    }
+
     .titulo {
-text-align: center;
-    }
-    
-
-.cardproducto {
-    width: 250px;
-    height: auto;
-    margin: 10px;
-
-    .title {
-        height: 50px;
+        text-align: center;
     }
 }
 
+
+
+
+.cardproducto {
+    width: 200px;
+    height: 100px;
+    margin: 10px;
+  
+    .img {
+
+        margin: 10px;
+    }
+
+    .title {
+        height: 50px;
+        font-size: 0.75rem;
+    }
+}
