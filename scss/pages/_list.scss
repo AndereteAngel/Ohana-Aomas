@@ -1,16 +1,22 @@
 /*list price table*/
 
 .list {
-    text-align: center;
-    color: palevioletred;
-    font-size: 0.5rem;
-    border: solid;
- }
- 
- .list-title {
-    text-align: center;
-    color: rgb(231, 202, 212);
-    font-size: 0.75rem;
-    border: solid;
- }
- 
+   text-align: center;
+   color: palevioletred;
+   border: solid;
+   font-size: 0.5rem;
+
+td { 
+   border: solid palevioletred;
+}
+.list-title {
+   text-align: center;
+   color: rgb(231, 202, 212);
+   font-size: 0.75rem;
+   border: solid;
+}
+
+}
+
+
+

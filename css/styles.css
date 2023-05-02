@@ -44,6 +44,7 @@ img {
   width: 200px;
   height: 100px;
   margin: 10px;
+  font-size: 0.75rem;
 }
 .cardproducto .img {
   margin: 10px;
@@ -51,6 +52,7 @@ img {
 .cardproducto .title {
   height: 50px;
   font-size: 0.75rem;
+  margin: 0;
 }
 
 nav {
@@ -167,75 +169,59 @@ p {
 .list {
   text-align: center;
   color: palevioletred;
-  font-size: 0.5rem;
   border: solid;
+  font-size: 0.5rem;
 }
-
-.list-title {
+.list td {
+  border: solid palevioletred;
+}
+.list .list-title {
   text-align: center;
   color: rgb(231, 202, 212);
   font-size: 0.75rem;
   border: solid;
 }
 
-/*Nuestros productos*/
-.card {
-  margin-left: 50px;
-  width: 250px;
+/*Nuestros productos
+art
+cardproducto title
+cardproducto-img
+cardproducto-text*/
+.art {
+  border: solid palevioletred;
+  display: inline-block;
+  background-color: black;
 }
-
-.cardproducto {
+.art .cardproducto {
   color: palevioletred;
 }
-
-.card-titulo {
-  font: size 0.75rem;
+.art .cardproducto-img {
+  width: 190px;
+  height: 200px;
+  margin: 10px;
+  border: solid palevioletred;
 }
-
-.cardproducto-img {
-  width: 250px;
-}
-
-.card-descripcion {
-  font-size: 0.5rem;
+.art .cardproducto-title {
+  margin: 10px;
+  padding: 5px;
+  border: solid;
+  font-size: 0.75rem;
   color: palevioletred;
+  background-color: aqua;
 }
 
 .title {
   background-color: blueviolet;
-  font-size: 1rem;
+  font-size: 0.75rem;
   border: solid;
-  margin-top: 30px;
   text-align: center;
-}
-
-.cardaero {
-  width: 250px;
-  height: 200px;
-  margin: 10px;
-  padding: 0px;
-}
-
-.cardaero-title {
-  text-align: center;
-  color: palevioletred;
-  font-size: 1rem;
-}
-
-.cardaero-price {
-  text-align: center;
-  color: palevioletred;
-  font-size: 1rem;
-}
-
-.art {
-  border: solid black;
-  display: contents;
+  padding: 10px;
 }
 
 .imgpedidos {
   width: 250px;
-  height: 100px;
+  height: 200px;
+  border: solid palevioletred;
 }
 
 .titulopedidos {

@@ -1,57 +1,40 @@
-/*Nuestros productos*/
+/*Nuestros productos
+art
+cardproducto title
+cardproducto-img
+cardproducto-text*/
 
-
-.card {
-    margin-left: 50px;
-    width: 250px;
- }
- 
- .cardproducto {
-    color: palevioletred;
- }
- 
- .card-titulo {
-    font: size 0.75rem;
-    ;
- }
- 
- .cardproducto-img {
-    width: 250px;
- }
- 
- .card-descripcion {
-    font-size: 0.5rem;
-    color: palevioletred;
- }
- 
- .title {
-    background-color: blueviolet;
-    font-size: 1rem;
-    border: solid;
-    margin-top: 30px;
-    text-align: center;
- }
- 
- .cardaero {
-    width: 250px;
-    height: 200px;
-    margin: 10px;
-    padding: 0px;
- }
- 
- .cardaero-title {
-    text-align: center;
-    color: palevioletred;
-    font-size: 1rem;
- }
- 
- .cardaero-price {
-    text-align: center;
-    color: palevioletred;
-    font-size: 1rem;
- }
- 
 .art {
-   border: solid black;
-   display: contents;
+   border: solid palevioletred;
+   display: inline-block;
+   background-color: black;
+
+
+   .cardproducto {
+      color: palevioletred;
+   }
+
+   .cardproducto-img {
+      width: 190px;
+      height: 200px;
+      margin: 10px;
+      border: solid palevioletred;
+   }
+
+   .cardproducto-title {
+      margin: 10px;
+      padding: 5px;
+      border: solid;
+      font-size: 0.75rem;
+      color: palevioletred;
+      background-color: aqua;
+   }
+}
+
+.title {
+   background-color: blueviolet;
+   font-size: 0.75rem;
+   border: solid;
+   text-align: center;
+   padding: 10px;
 }
