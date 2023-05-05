@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: rgb(221, 159, 117);
+}
+
 /*navbar
 nav-logo
 nav-item
@@ -52,22 +56,42 @@ navbar-nav*/
   color: palevioletred;
 }
 
-main form {
+/* formingreso
+form-control
+botonindex
+*/
+.formingreso {
   border: solid;
   background-color: blueviolet;
   text-align: center;
-  margin-top: 30px;
+  margin: 30px;
   font-size: 0.5rem;
-  width: 260px;
-  align-items: center;
-  justify-items: center;
+  padding: 10px;
+  height: 200px;
 }
-main button {
-  margin: 10px;
-  text-decoration: none;
-  background-color: palevioletred;
-  width: 200px;
+
+.botonindex {
+  margin: 30px;
+  font-size: 1rem;
   color: black;
+  border: solid black;
+  place-content: center;
+  place-self: center;
+  text-decoration: none;
+  background-color: brown;
+  padding: 10px;
+  display: flex;
+}
+
+.navitem-footer {
+  font-size: 1rem;
+  padding: 5px;
+  background-color: grey;
+  border: solid black;
+  border-radius: 10%;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 60px;
 }
 
 /*carrusel
@@ -171,7 +195,7 @@ cardlong-description*/
 }
 
 /*---------- (370)---------*/
-@media (max-width: 370px) {
+@media (max-width: 375px) {
   .description {
     margin: 10px;
     display: grid;
@@ -259,12 +283,12 @@ cardlong-description*/
     margin: 10px;
   }
 }
-/*---------- (371/800)---------*/
-@media (min-width: 371px) and (max-width: 801px) {
+/*---------- (376/768)---------*/
+@media (min-width: 376px) and (max-width: 768px) {
   .description {
     margin: 10px;
     display: grid;
-    grid-template-columns: 280px;
+    grid-template-columns: 700px;
     grid-template-rows: 100px 260px;
     gap: 10px;
     background-color: rgb(55, 133, 185);
@@ -279,6 +303,7 @@ cardlong-description*/
     margin: 10px;
     padding: 5px;
     font-size: 1rem;
+    width: 280px;
   }
   .description-cuerpo {
     justify-self: start;
@@ -288,7 +313,7 @@ cardlong-description*/
   /*--------------*/
   .tarjetas {
     display: grid;
-    grid-template-columns: 280px;
+    grid-template-columns: 700px;
     grid-template-rows: repeat(3, 450px);
     gap: 10px;
     border: solid black;
@@ -334,52 +359,139 @@ cardlong-description*/
   }
   .cardlong-description {
     place-self: center;
+    margin-left: 10px;
     font-size: 1rem;
     color: black;
   }
 }
 /* contactos */
-input {
-  margin-bottom: 10px;
-  font-size: 0.1rem;
-  color: palevioletred;
-}
-
-p {
-  color: palevioletred;
-}
-
-.input-group {
-  height: 20px;
-  font-size: 0.75rem;
+/*intro
+form
+form-control
+form-cuadro
+*/
+.intro {
+  text-align: center;
+  font-size: 1rem;
+  border: solid black;
+  background-color: rgb(189, 89, 89);
   margin: 10px;
+  color: black;
+  width: 340px;
 }
-.input-group .input-group.text {
-  font-size: 0.5rem;
+
+.form {
+  display: grid;
+  grid-template-columns: 340px;
+  grid-template-rows: repeat(3, 1fr) 200px;
+  background-color: rgb(39, 51, 51);
+  place-content: center;
+  place-items: center;
+  width: 340px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.formcontrol {
+  height: 30px;
+  width: 210px;
+  font-size: 1rem;
+  background-color: grey;
   margin-top: 10px;
+  place-self: start;
 }
 
-.form-floating {
-  margin: 10px;
-  height: 500px;
-  width: auto;
+.formcuadro {
+  height: 100px;
+  width: 210px;
+  text-align: start;
 }
 
-/*list price table*/
-.list {
-  text-align: center;
-  color: palevioletred;
-  border: solid;
-  font-size: 0.5rem;
+/*------- (376/768)------*/
+@media (min-width: 376px) and (max-width: 1024px) {
+  .intro {
+    text-align: center;
+    font-size: 1rem;
+    border: solid black;
+    background-color: rgb(189, 89, 89);
+    margin: 10px;
+    color: black;
+    width: 750px;
+  }
+  .form {
+    display: grid;
+    grid-template-columns: 750px;
+    grid-template-rows: repeat(3, 1fr) 200px;
+    background-color: rgb(39, 51, 51);
+    place-content: center;
+    place-items: center;
+    width: 750px;
+    margin: 10px;
+    padding: 10px;
+  }
+  .formcontrol {
+    height: 30px;
+    width: 700px;
+    font-size: 1rem;
+    background-color: grey;
+    margin-top: 10px;
+    place-self: start;
+  }
+  .formcuadro {
+    height: 100px;
+    width: 680px;
+    margin: 10px;
+    text-align: start;
+  }
 }
-.list td {
-  border: solid palevioletred;
+/*--------1024 o mas------*/
+@media (min-width: 1024px) {
+  .intro {
+    text-align: center;
+    font-size: 1rem;
+    border: solid black;
+    background-color: rgb(189, 89, 89);
+    margin: 10px;
+    color: black;
+    width: 900px;
+  }
+  .form {
+    display: grid;
+    grid-template-columns: 900px;
+    grid-template-rows: repeat(3, 1fr) 200px;
+    background-color: rgb(39, 51, 51);
+    place-content: center;
+    place-items: center;
+    width: 900px;
+    margin: 10px;
+    padding: 10px;
+  }
+  .formcontrol {
+    height: 30px;
+    width: 100px;
+    font-size: 1rem;
+    background-color: grey;
+    margin-top: 10px;
+    place-self: start;
+  }
+  .formcuadro {
+    height: 100px;
+    width: 900px;
+    margin: 10px;
+    text-align: start;
+  }
 }
-.list .list-title {
-  text-align: center;
-  color: rgb(231, 202, 212);
-  font-size: 0.75rem;
-  border: solid;
+.table {
+  color: black;
+  background-color: aquamarine;
+  border: solid white;
+}
+.table td:hover {
+  font-size: 1.1rem;
+  background-color: aqua;
+  color: black;
+  border: solid black;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 /*Nuestros productos
@@ -476,8 +588,8 @@ pedidos-cantidad*/
   height: 100px;
 }
 
-/*--------1200 o mas------*/
-@media (min-width: 1200px) {
+/*--------1024 o mas------*/
+@media (min-width: 1024px) {
   .pedidos {
     display: grid;
     grid-template-columns: 300px 600px;
@@ -512,8 +624,8 @@ pedidos-cantidad*/
     width: 300px;
   }
 }
-/*------- (371/1200)------*/
-@media (min-width: 371px) and (max-width: 1190px) {
+/*------- (376/768)------*/
+@media (min-width: 376px) and (max-width: 1024px) {
   .pedidos {
     display: grid;
     grid-template-columns: 200px 500px;
@@ -548,40 +660,6 @@ pedidos-cantidad*/
   .pedidos-selector {
     width: 398px;
   }
-}
-body {
-  background-image: url(../img/fondo6.jpg);
-}
-
-/*class:
-artaero
-artaero-titulo
-artaero-img
-arta*/
-.artaero {
-  background-color: aqua;
-  margin: 5px;
-  border: solid black;
-  display: inline-block;
-}
-.artaero .artaero-titulo {
-  font-size: 0.75rem;
-}
-
-.arta {
-  list-style: none;
-  text-decoration: none;
-  color: aqua;
-  background-color: black;
-  border: solid aqua;
-  font-size: 0.5rem;
-}
-
-.arta:hover {
-  font-size: 0.75rem;
-  background-color: aqua;
-  color: black;
-  border: solid black;
 }
 
 /*# sourceMappingURL=styles.css.map */

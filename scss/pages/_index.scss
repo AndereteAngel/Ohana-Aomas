@@ -1,21 +1,39 @@
-main {
+/* formingreso
+form-control
+botonindex
+*/
 
-   form {
-      border: solid;
-      background-color: blueviolet;
-      text-align: center;
-      margin-top: 30px;
-      font-size: 0.5rem;
-      width: 260px;
-      align-items: center;
-      justify-items: center;
-   }
+.formingreso {
+   border: solid;
+   background-color: blueviolet;
+   text-align: center;
+   margin: 30px;
+   font-size: 0.5rem;
+   padding: 10px;
+   height: 200px;
+}
 
-   button {
-      margin: 10px;
-      text-decoration: none;
-      background-color: palevioletred;
-      width:200px;
-      color: black;
-   }
+.botonindex {
+   margin: 30px;
+   font-size: 1rem;
+   color: black;
+   border: solid black;
+   place-content: center;
+   place-self: center;
+   text-decoration: none;
+   background-color: brown;
+   padding: 10px;
+   display: flex;
+}
+
+.navitem-footer {
+
+   font-size: 1rem;
+   padding: 5px;
+   background-color: grey;
+   border: solid black;
+   border-radius: 10%;
+   text-align: center;
+   text-decoration: none;
+   margin-top: 60px;
 }

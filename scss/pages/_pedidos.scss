@@ -51,9 +51,9 @@ pedidos-cantidad*/
     height: 100px;
 }
 
-/*--------1200 o mas------*/
+/*--------1024 o mas------*/
 
-@media (min-width:1200px) {
+@media (min-width:1024px) {
     .pedidos {
         display: grid;
         grid-template-columns: 300px 600px;
@@ -93,9 +93,9 @@ pedidos-cantidad*/
     }
 }
 
-/*------- (371/1200)------*/
+/*------- (376/768)------*/
 
-@media (min-width:371px) and (max-width:1190px) {
+@media (min-width:376px) and (max-width:1024px) {
     .pedidos {
         display: grid;
         grid-template-columns: 200px 500px;

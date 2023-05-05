@@ -1,11 +1,22 @@
-.nav-footer {
+/*navfooter
+nav-item
+nav-link
+*/
+
+.navfooter {
     border: solid;
     list-style: none;
-  
     background-color: violet;
     font-size: 0.75rem;
     width: 260px;
-    margin-top: 30px;
+    margin: 30px;
     display: inline;
  }
  
+ .navitem-footer {
+    font-size: 1rem;
+    padding: 5px;
+    background-color: grey;
+    border: solid black;
+    border-radius: 10%;
+ }
