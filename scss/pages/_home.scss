@@ -1,3 +1,306 @@
-p {
+/*carrusel
+
+description: 
+description-titulo
+description-cuerpo
+*/
+
+.description {
+   margin: 10px;
+   display: grid;
+   grid-template-columns: 800px;
+   grid-template-rows: 60px 200px;
+   gap: 10px;
+   background-color: rgb(55, 133, 185);
+   border: solid;
+   place-items: center;
+   place-content: center;
+   color: black
+}
+
+.description-titulo {
+   h2 {
+      border: solid black;
+      background-color: rgb(197, 95, 36);
+      margin: 40px;
+      padding: 5px;
+   }
+
+}
+
+.description-cuerpo {
+   justify-self: start;
+   color: black;
+   font-size: 1.5rem;
+}
+
+/*tarjetas
+card:
+card-titulo
+card-img
+card-description
+*/
+
+.tarjetas {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: 40px 200px 100px;
+   column-gap: 10px;
+   border: solid black;
+   background-color: rgb(197, 95, 36);
+   margin: 10px;
+   justify-items: center;
+   gap: 10px;
+}
+
+.card-img {
+   width: 280px;
+   height: 200px;
+}
+
+.card-titulo {
+   font-size: 1rem;
+   border: solid black;
+   background-color: rgb(189, 89, 89);
+   margin: 10px;
+   justify-self: center;
+   align-self: center;
+}
+
+.card-description {
+   font-size: 1rem;
+   border: solid black;
+   background-color: rgb(189, 89, 89);
+   margin: 10px;
    text-align: center;
+   color: black;
+}
+
+/*cardlong
+cardlong-titulo
+cardlong-img
+cardlong-description*/
+
+.cardlong {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   border: solid black;
+   background-color: rgb(189, 89, 89);
+   color: black;
+   margin: 10px;
+}
+
+.cardlong-titulo {
+   place-self: center;
+   font-size: 2rem;
+   color: rgb(189, 89, 89);
+   background-color: black;
+   padding: 5px;
+}
+
+.cardlong-description {
+   place-self: center;
+   font-size: 1rem;
+   color: black;
+}
+
+/*---------- (370)---------*/
+
+@media (max-width:370px) {
+   .description {
+      margin: 10px;
+      display: grid;
+      grid-template-columns: 280px;
+      grid-template-rows: 100px 260px;
+      gap: 10px;
+      background-color: rgb(55, 133, 185);
+      border: solid;
+      place-items: center;
+      place-content: center;
+      color: black
+   }
+   
+   .description-titulo {
+      h2 {
+         border: solid black;
+         background-color: rgb(197, 95, 36);
+         margin: 10px;
+         padding: 5px;
+         font-size: 1rem;
+      }
+   
+   }
+   
+   .description-cuerpo {
+      justify-self: start;
+      color: black;
+      font-size: 1rem;
+   }
+
+   /*--------------*/
+
+   .tarjetas {
+      display: grid;
+      grid-template-columns: 280px;
+      grid-template-rows:repeat(3, 450px);
+      gap: 10px;
+      border: solid black;
+      background-color: rgb(197, 95, 36);
+      margin: 10px;
+      place-items: center;
+      place-content: center;
+   }
+   
+   .card-img {
+      width: 280px;
+      height: 300px;
+   }
+   
+   .card-titulo {
+      font-size: 1rem;
+      border: solid black;
+      background-color: rgb(189, 89, 89);
+      margin: 10px;
+      text-align: center;
+   }
+   
+   .card-description {
+      font-size: 1rem;
+      border: solid black;
+      background-color: rgb(189, 89, 89);
+      margin: 10px;
+      text-align: center;
+      color: black;
+   }
+
+   /*--------------*/
+
+   .cardlong {
+      display: grid;
+      grid-template-columns: 280px;
+      grid-template-rows: 250px;
+      border: solid black;
+      background-color: rgb(189, 89, 89);
+      color: black;
+      margin: 10px;
+   }
+   
+   .cardlong-titulo {
+      place-self: center;
+      font-size: 1rem;
+      color: rgb(189, 89, 89);
+      background-color: black;
+      padding: 5px;
+   }
+   
+   .cardlong-description {
+      place-self: center;
+      font-size: 1rem;
+      color: black;
+      gap: 20px;
+      place-items: center;
+      text-align: center;
+   }
+
+   .cardlong-img {
+      width: 280px;
+      height: 200px;
+      place-items: center;
+      margin: 10px;
+   }  
+}
+
+/*---------- (371/800)---------*/
+
+@media (min-width:371px) and (max-width:801px) {
+   .description {
+      margin: 10px;
+      display: grid;
+      grid-template-columns: 280px;
+      grid-template-rows: 100px 260px;
+      gap: 10px;
+      background-color: rgb(55, 133, 185);
+      border: solid;
+      place-items: center;
+      place-content: center;
+      color: black
+   }
+   
+   .description-titulo {
+      h2 {
+         border: solid black;
+         background-color: rgb(197, 95, 36);
+         margin: 10px;
+         padding: 5px;
+         font-size: 1rem;
+      }
+   
+   }
+   
+   .description-cuerpo {
+      justify-self: start;
+      color: black;
+      font-size: 1rem;
+   }
+
+   /*--------------*/
+
+   .tarjetas {
+      display: grid;
+      grid-template-columns: 280px;
+      grid-template-rows:repeat(3, 450px);
+      gap: 10px;
+      border: solid black;
+      background-color: rgb(197, 95, 36);
+      margin: 10px;
+      place-items: center;
+      place-content: center;
+   }
+   
+   .card-img {
+      width: 280px;
+      height: 300px;
+   }
+   
+   .card-titulo {
+      font-size: 1rem;
+      border: solid black;
+      background-color: rgb(189, 89, 89);
+      margin: 10px;
+      text-align: center;
+   }
+   
+   .card-description {
+      font-size: 1rem;
+      border: solid black;
+      background-color: rgb(189, 89, 89);
+      margin: 10px;
+      text-align: center;
+      color: black;
+   }
+
+   /*--------------*/
+
+   .cardlong {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      border: solid black;
+      background-color: rgb(189, 89, 89);
+      color: black;
+      margin: 10px;
+   }
+   
+   .cardlong-titulo {
+      place-self: center;
+      font-size: 1rem;
+      color: rgb(189, 89, 89);
+      background-color: black;
+      padding: 5px;
+   }
+   
+   .cardlong-description {
+      place-self: center;
+      font-size: 1rem;
+      color: black;
+   }  
 }

@@ -1,44 +1,27 @@
-nav {
+/*navbar
+nav-logo
+nav-item
+navbar-toggler
+navbar-collapse
+navbar-nav*/
 
-   justify-items: end;
-   align-items: center;
-   background-color: violet;
-   color: rgb(16, 17, 17);
-   list-style: none;
-   text-decoration: none;
-   font-size: 0.5rem;
-   border: solid;
-   display: inline-flex;
+.nav-logo {
+   width: 100px;
+   height: 90px;
+}
 
-   .navbar {
-     
-      justify-items: end;
-      align-items: center;
-      background-color: violet;
-      color: rgb(16, 17, 17);
-      list-style: none;
-      text-decoration: none;
-      font-size: 0.5rem;
-      border: solid;
-      margin-left: 10px;
-      display: inline-flex;
-   }
+.nav-item {
+   font-size: 1rem;
+   padding: 5px;
+   background-color: grey;
+   border: solid black;
+   border-radius: 10%;
+}
 
-   .navbar-title {
-      background-color: violet;
-      font-size: 0.5rem;
-      border: solid;
-      border-radius: 10%;
-      margin-left: 40px;
+.navbar-collapse {
+  justify-content: end;
+}
 
-   }
-
-   .navbar-logo {
-      list-style: none;
-      text-decoration: none;
-      background-color: violet;
-      color: rgb(16, 17, 17);
-      border: solid;
-      font-size: 0.75rem;
-   }
+.navbar {
+   height: 100px;
 }

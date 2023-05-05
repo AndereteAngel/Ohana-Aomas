@@ -1,24 +1,25 @@
 /*Nuestros productos
 art
-cardproducto title
+cardproducto-title
 cardproducto-img
 cardproducto-text*/
 
 .art {
-   border: solid palevioletred;
+   border: solid rgb(8, 8, 8);
    display: inline-block;
-   background-color: black;
+   background-color: rgb(87, 187, 87);
 
 
    .cardproducto {
-      color: palevioletred;
+      color: rgb(8, 8, 8);
    }
 
    .cardproducto-img {
+      
       width: 190px;
       height: 200px;
       margin: 10px;
-      border: solid palevioletred;
+      border: solid rgb(8, 8, 8);
    }
 
    .cardproducto-title {
@@ -26,15 +27,23 @@ cardproducto-text*/
       padding: 5px;
       border: solid;
       font-size: 0.75rem;
-      color: palevioletred;
-      background-color: aqua;
+      color: rgb(8, 8, 8);
+      background-color: rgb(100, 187, 161);
+      text-align: center;
+      font-size: 1.5rem;
    }
 }
 
 .title {
    background-color: blueviolet;
-   font-size: 0.75rem;
+   font-size: 1.5rem;
    border: solid;
    text-align: center;
    padding: 10px;
 }
+
+.cardproducto-text {
+   color: black;
+   font-size: 1rem;
+}
+
