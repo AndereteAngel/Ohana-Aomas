@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: rgb(221, 159, 117);
+  background-color: rgb(203, 236, 245);
 }
 
 /*navbar
@@ -14,16 +14,29 @@ nav-item
 navbar-toggler
 navbar-collapse
 navbar-nav*/
-.nav-logo {
+.logo {
+  display: grid;
+  grid-template-rows: 40px 40px;
   width: 100px;
-  height: 90px;
+  height: 80px;
+  padding: 5px;
+  text-decoration: none;
+  text-align: center;
+  place-items: center;
+  color: rgb(117, 3, 70);
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.logo-img {
+  width: 30px;
+  padding: 5px;
 }
 
 .nav-item {
   font-size: 1rem;
   padding: 5px;
-  background-color: grey;
-  border: solid black;
+  background: linear-gradient(rgb(226, 73, 188), rgb(206, 163, 188));
+  margin: 10px;
   border-radius: 10%;
 }
 
@@ -33,6 +46,22 @@ navbar-nav*/
 
 .navbar {
   height: 100px;
+}
+
+nav {
+  background: linear-gradient(rgb(207, 148, 207), rgb(116, 17, 116));
+}
+
+.title {
+  display: grid;
+  grid-template-rows: 50px;
+  grid-template-columns: 360px;
+  background: linear-gradient(rgb(157, 185, 187), rgb(39, 210, 223));
+  margin: 10px;
+  place-content: center;
+  place-items: center;
+  place-self: center;
+  font-size: 1.5rem;
 }
 
 .carrusel {
@@ -54,6 +83,28 @@ navbar-nav*/
 .carrusel img {
   height: 200px;
   color: palevioletred;
+}
+
+/*navfooter
+nav-item
+nav-link
+*/
+.navfooter {
+  display: flex;
+  place-content: end;
+  font-size: 0.5rem;
+  padding-right: 10px;
+  list-style: none;
+  text-align: center;
+}
+
+.nav-item-foot {
+  font-size: 0.7rem;
+  padding: 10px;
+  background: linear-gradient(rgb(226, 73, 188), rgb(206, 163, 188));
+  border-radius: 10%;
+  text-align: center;
+  margin-top: 10px;
 }
 
 /* formingreso
@@ -83,98 +134,99 @@ botonindex
   display: flex;
 }
 
-.navitem-footer {
-  font-size: 1rem;
-  padding: 5px;
-  background-color: grey;
-  border: solid black;
-  border-radius: 10%;
-  text-align: center;
-  text-decoration: none;
-  margin-top: 60px;
-}
-
 /*carrusel
 
 description: 
 description-titulo
 description-cuerpo
 */
+/*---------- (376)---------*/
 .description {
   margin: 10px;
   display: grid;
-  grid-template-columns: 800px;
-  grid-template-rows: 60px 200px;
-  gap: 10px;
+  grid-template-columns: 340px;
+  grid-template-rows: 100px 260px;
   background-color: rgb(55, 133, 185);
-  border: solid;
   place-items: center;
   place-content: center;
   color: black;
 }
 
-.description-titulo h2 {
-  border: solid black;
-  background-color: rgb(197, 95, 36);
-  margin: 40px;
-  padding: 5px;
-}
-
 .description-cuerpo {
   justify-self: start;
   color: black;
-  font-size: 1.5rem;
+  font-size: 1rem;
+  width: auto;
+  text-align: center;
 }
 
-/*tarjetas
-card:
-card-titulo
-card-img
-card-description
-*/
-.tarjetas {
+/*--------------*/
+/*tarjetas-produc
+tarjetas-price
+tarjetas-pedidos*/
+.tarjetas-produc {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 40px 200px 100px;
+  grid-template-columns: 340px;
+  grid-template-rows: 80px 200px 80px;
   column-gap: 10px;
-  border: solid black;
-  background-color: rgb(197, 95, 36);
   margin: 10px;
   justify-items: center;
+  text-align: center;
   gap: 10px;
 }
 
-.card-img {
-  width: 280px;
-  height: 200px;
+.tarjetas-price {
+  display: grid;
+  grid-template-columns: 340px;
+  grid-template-rows: 80px 200px 80px;
+  column-gap: 10px;
+  margin: 10px;
+  justify-items: center;
+  text-align: center;
+  gap: 10px;
+}
+
+.tarjetas-pedidos {
+  display: grid;
+  grid-template-columns: 340px;
+  grid-template-rows: 80px 200px 80px;
+  column-gap: 10px;
+  margin: 10px;
+  justify-items: center;
+  text-align: center;
+  gap: 10px;
 }
 
 .card-titulo {
   font-size: 1rem;
-  border: solid black;
-  background-color: rgb(189, 89, 89);
+  background-color: rgb(61, 196, 184);
   margin: 10px;
+  padding: 10px;
   justify-self: center;
   align-self: center;
+  height: auto;
+}
+
+.card-img {
+  width: 300px;
+  height: 200px;
 }
 
 .card-description {
   font-size: 1rem;
-  border: solid black;
-  background-color: rgb(189, 89, 89);
+  background-color: rgb(61, 196, 184);
   margin: 10px;
+  padding: 10px;
   text-align: center;
   color: black;
+  height: auto;
 }
 
-/*cardlong
-cardlong-titulo
-cardlong-img
-cardlong-description*/
+/*--------------*/
 .cardlong {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  border: solid black;
+  grid-template-columns: 280px;
+  grid-template-rows: 250px 100px 100px;
   background-color: rgb(189, 89, 89);
   color: black;
   margin: 10px;
@@ -182,184 +234,138 @@ cardlong-description*/
 
 .cardlong-titulo {
   place-self: center;
-  font-size: 2rem;
+  font-size: 1rem;
   color: rgb(189, 89, 89);
   background-color: black;
   padding: 5px;
+  margin-left: 60px;
 }
 
 .cardlong-description {
-  place-self: center;
   font-size: 1rem;
   color: black;
+  text-align: center;
+  width: auto;
+  margin-left: 60px;
 }
 
-/*---------- (370)---------*/
-@media (max-width: 375px) {
-  .description {
-    margin: 10px;
-    display: grid;
-    grid-template-columns: 280px;
-    grid-template-rows: 100px 260px;
-    gap: 10px;
-    background-color: rgb(55, 133, 185);
-    border: solid;
-    place-items: center;
-    place-content: center;
-    color: black;
-  }
-  .description-titulo h2 {
-    border: solid black;
-    background-color: rgb(197, 95, 36);
-    margin: 10px;
-    padding: 5px;
-    font-size: 1rem;
-  }
-  .description-cuerpo {
-    justify-self: start;
-    color: black;
-    font-size: 1rem;
-  }
-  /*--------------*/
-  .tarjetas {
-    display: grid;
-    grid-template-columns: 280px;
-    grid-template-rows: repeat(3, 450px);
-    gap: 10px;
-    border: solid black;
-    background-color: rgb(197, 95, 36);
-    margin: 10px;
-    place-items: center;
-    place-content: center;
-  }
-  .card-img {
-    width: 280px;
-    height: 300px;
-  }
-  .card-titulo {
-    font-size: 1rem;
-    border: solid black;
-    background-color: rgb(189, 89, 89);
-    margin: 10px;
-    text-align: center;
-  }
-  .card-description {
-    font-size: 1rem;
-    border: solid black;
-    background-color: rgb(189, 89, 89);
-    margin: 10px;
-    text-align: center;
-    color: black;
-  }
-  /*--------------*/
-  .cardlong {
-    display: grid;
-    grid-template-columns: 280px;
-    grid-template-rows: 250px;
-    border: solid black;
-    background-color: rgb(189, 89, 89);
-    color: black;
-    margin: 10px;
-  }
-  .cardlong-titulo {
-    place-self: center;
-    font-size: 1rem;
-    color: rgb(189, 89, 89);
-    background-color: black;
-    padding: 5px;
-  }
-  .cardlong-description {
-    place-self: center;
-    font-size: 1rem;
-    color: black;
-    gap: 20px;
-    place-items: center;
-    text-align: center;
-  }
-  .cardlong-img {
-    width: 280px;
-    height: 200px;
-    place-items: center;
-    margin: 10px;
-  }
+.cardlong-img {
+  width: 320px;
+  height: 200px;
+  margin: 10px;
 }
+
 /*---------- (376/768)---------*/
-@media (min-width: 376px) and (max-width: 768px) {
+@media (min-width: 376px) and (max-width: 1019px) {
   .description {
-    margin: 10px;
     display: grid;
-    grid-template-columns: 700px;
-    grid-template-rows: 100px 260px;
-    gap: 10px;
-    background-color: rgb(55, 133, 185);
-    border: solid;
-    place-items: center;
-    place-content: center;
-    color: black;
-  }
-  .description-titulo h2 {
-    border: solid black;
-    background-color: rgb(197, 95, 36);
-    margin: 10px;
-    padding: 5px;
-    font-size: 1rem;
-    width: 280px;
+    grid-template-columns: 768px;
+    grid-template-rows: 70px 120px;
+    gap: 5px;
   }
   .description-cuerpo {
-    justify-self: start;
-    color: black;
-    font-size: 1rem;
+    padding: 10px;
   }
   /*--------------*/
   .tarjetas {
     display: grid;
-    grid-template-columns: 700px;
-    grid-template-rows: repeat(3, 450px);
-    gap: 10px;
-    border: solid black;
-    background-color: rgb(197, 95, 36);
+    grid-template-columns: repeat(3, 250px);
+    grid-template-rows: 300px 150px;
+    column-gap: 10px;
     margin: 10px;
-    place-items: center;
-    place-content: center;
+    justify-items: center;
+    text-align: center;
+    gap: 10px;
   }
   .card-img {
-    width: 280px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
   }
   .card-titulo {
-    font-size: 1rem;
-    border: solid black;
-    background-color: rgb(189, 89, 89);
-    margin: 10px;
-    text-align: center;
+    font-size: 1.5rem;
+    width: 200px;
   }
   .card-description {
-    font-size: 1rem;
-    border: solid black;
-    background-color: rgb(189, 89, 89);
-    margin: 10px;
-    text-align: center;
-    color: black;
+    width: 200px;
+    height: 100px;
   }
   /*--------------*/
   .cardlong {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
     border: solid black;
-    background-color: rgb(189, 89, 89);
+  }
+  .cardlong-titulo {
+    text-align: center;
+    margin-left: 10px;
+  }
+  .cardlong-description {
+    place-self: center;
+    margin-left: 10px;
+  }
+}
+@media (min-width: 1020px) {
+  .description {
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 900px;
+    grid-template-rows: 60px 200px;
+    gap: 10px;
+    background-color: rgb(55, 133, 185);
+    place-items: center;
+    place-content: center;
+    color: black;
+  }
+  .description-cuerpo {
+    justify-self: start;
+    color: black;
+    font-size: 1.5rem;
+  }
+  /*tarjetas
+  card:
+  card-titulo
+  card-img
+  card-description
+  */
+  .tarjetas {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: 40px 250px 150px;
+  }
+  .card-titulo {
+    font-size: 1rem;
+    background-color: rgb(61, 196, 184);
+    margin: 10px;
+    padding: 10px;
+    justify-self: center;
+    align-self: center;
+  }
+  .card-img {
+    width: 250px;
+    height: 200px;
+  }
+  /*cardlong
+  cardlong-titulo
+  cardlong-img
+  cardlong-description*/
+  .cardlong {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    background-color: rgb(108, 165, 180);
     color: black;
     margin: 10px;
   }
   .cardlong-titulo {
     place-self: center;
-    font-size: 1rem;
+    font-size: 2rem;
     color: rgb(189, 89, 89);
     background-color: black;
     padding: 5px;
   }
   .cardlong-description {
     place-self: center;
-    margin-left: 10px;
     font-size: 1rem;
     color: black;
   }
@@ -370,17 +376,15 @@ form
 form-control
 form-cuadro
 */
-.intro {
+.intro-contact {
   text-align: center;
   font-size: 1rem;
-  border: solid black;
-  background-color: rgb(189, 89, 89);
+  background: linear-gradient(rgb(207, 148, 207), rgb(116, 17, 116));
   margin: 10px;
-  color: black;
   width: 340px;
 }
 
-.form {
+.form-contact {
   display: grid;
   grid-template-columns: 340px;
   grid-template-rows: repeat(3, 1fr) 200px;
@@ -392,33 +396,41 @@ form-cuadro
   padding: 10px;
 }
 
-.formcontrol {
+.form-control {
   height: 30px;
-  width: 210px;
+  width: 340px;
   font-size: 1rem;
-  background-color: grey;
   margin-top: 10px;
+  margin: 10px;
   place-self: start;
 }
 
 .formcuadro {
   height: 100px;
-  width: 210px;
+  width: 340px;
+  margin: 10px;
   text-align: start;
 }
 
+.boton {
+  display: flex;
+  place-content: center;
+}
+
 /*------- (376/768)------*/
-@media (min-width: 376px) and (max-width: 1024px) {
-  .intro {
+@media (min-width: 376px) and (max-width: 1019px) {
+  .intro-contact {
+    display: grid;
+    grid-template-columns: 700px;
+    grid-template-rows: 100px;
     text-align: center;
     font-size: 1rem;
-    border: solid black;
     background-color: rgb(189, 89, 89);
     margin: 10px;
     color: black;
     width: 750px;
   }
-  .form {
+  .form-contact {
     display: grid;
     grid-template-columns: 750px;
     grid-template-rows: repeat(3, 1fr) 200px;
@@ -429,7 +441,7 @@ form-cuadro
     margin: 10px;
     padding: 10px;
   }
-  .formcontrol {
+  .form-control {
     height: 30px;
     width: 700px;
     font-size: 1rem;
@@ -440,44 +452,45 @@ form-cuadro
   .formcuadro {
     height: 100px;
     width: 680px;
-    margin: 10px;
     text-align: start;
   }
 }
 /*--------1024 o mas------*/
-@media (min-width: 1024px) {
-  .intro {
+@media (min-width: 1020px) {
+  .intro-contact {
+    display: grid;
+    grid-template-columns: 1000px;
+    grid-template-rows: 100px;
     text-align: center;
+    place-items: center;
     font-size: 1rem;
-    border: solid black;
-    background-color: rgb(189, 89, 89);
     margin: 10px;
     color: black;
-    width: 900px;
+    width: auto;
   }
-  .form {
+  .form-contact {
     display: grid;
-    grid-template-columns: 900px;
+    grid-template-columns: 1000px;
     grid-template-rows: repeat(3, 1fr) 200px;
-    background-color: rgb(39, 51, 51);
+    background: linear-gradient(rgb(37, 127, 155), rgb(29, 13, 121));
     place-content: center;
     place-items: center;
-    width: 900px;
     margin: 10px;
     padding: 10px;
+    padding-top: 30px;
+    width: 1000px;
   }
-  .formcontrol {
+  .form-control {
     height: 30px;
-    width: 100px;
     font-size: 1rem;
-    background-color: grey;
-    margin-top: 10px;
+    background: linear-gradient(rgb(207, 148, 207), rgb(116, 17, 116));
+    margin-top: 30px;
     place-self: start;
+    width: 900px;
   }
   .formcuadro {
     height: 100px;
     width: 900px;
-    margin: 10px;
     text-align: start;
   }
 }
@@ -500,40 +513,29 @@ cardproducto-title
 cardproducto-img
 cardproducto-text*/
 .art {
-  border: solid rgb(8, 8, 8);
-  display: inline-block;
-  background-color: rgb(87, 187, 87);
-}
-.art .cardproducto {
-  color: rgb(8, 8, 8);
+  background: linear-gradient(rgb(157, 185, 187), rgb(39, 210, 223));
 }
 .art .cardproducto-img {
-  width: 190px;
-  height: 200px;
+  width: 200px;
+  height: 180px;
   margin: 10px;
-  border: solid rgb(8, 8, 8);
+  place-items: center;
+  place-content: center;
+  place-self: center;
 }
 .art .cardproducto-title {
   margin: 10px;
   padding: 5px;
   border: solid;
   font-size: 0.75rem;
-  color: rgb(8, 8, 8);
-  background-color: rgb(100, 187, 161);
+  background: linear-gradient(rgb(226, 73, 188), rgb(206, 163, 188));
   text-align: center;
   font-size: 1.5rem;
-}
-
-.title {
-  background-color: blueviolet;
-  font-size: 1.5rem;
-  border: solid;
-  text-align: center;
-  padding: 10px;
+  border: none;
 }
 
 .cardproducto-text {
-  color: black;
+  text-align: center;
   font-size: 1rem;
 }
 
@@ -546,50 +548,53 @@ pedidos-cantidad*/
 /*---*/
 .pedidos {
   display: grid;
-  grid-template-columns: 280px;
+  grid-template-columns: 340px;
   grid-template-rows: 200px 100px 50px;
-  color: black;
+  place-content: center;
   margin: 10px;
   gap: 10px;
 }
 
 .pedidos-subtitulos {
-  background-color: aqua;
-  border: solid black;
+  background: linear-gradient(rgb(6, 224, 240), rgb(4, 151, 65));
   height: 50px;
   place-self: start;
   justify-items: center;
   padding: 0px;
-  width: 280px;
+  width: 320px;
   text-align: center;
 }
 
 .pedidos-img {
   height: 200px;
-  width: 280px;
-  justify-self: center;
-}
-
-.pedidos-titulo {
-  background-color: purple;
-  font-size: 1.5rem;
-  border: solid black;
-  color: black;
-  text-align: center;
-  width: 280px;
-  margin: 10px;
+  width: 320px;
 }
 
 .pedidos-selector {
-  width: 280px;
+  width: 320px;
 }
 
-.pedidos-cantidades {
-  height: 100px;
+.form-control {
+  text-align: center;
+  border: solid black;
+  height: 50px;
 }
 
-/*--------1024 o mas------*/
-@media (min-width: 1024px) {
+.form-control-pedidos {
+  width: 320px;
+  height: 50px;
+  background: linear-gradient(rgb(226, 73, 188), rgb(206, 163, 188));
+  text-align: center;
+}
+
+.button-pedidos {
+  display: flex;
+  place-content: center;
+  margin-top: 30px;
+}
+
+/*--------1020 o mas------*/
+@media (min-width: 1020px) {
   .pedidos {
     display: grid;
     grid-template-columns: 300px 600px;
@@ -599,8 +604,7 @@ pedidos-cantidad*/
     gap: 10px;
   }
   .pedidos-subtitulos {
-    background-color: aqua;
-    border: solid black;
+    background: linear-gradient(rgb(6, 224, 240), rgb(4, 151, 65));
     height: 80px;
     place-self: start;
     padding: 20px;
@@ -611,11 +615,11 @@ pedidos-cantidad*/
     height: 200px;
     width: 300px;
     justify-self: center;
+    border: solid black;
   }
   .pedidos-titulo {
     background-color: purple;
     font-size: 1.5rem;
-    border: solid black;
     color: black;
     text-align: center;
     width: 1100px;
@@ -623,7 +627,19 @@ pedidos-cantidad*/
   .pedidos-selector {
     width: 300px;
   }
+  .form-control-pedidos {
+    width: 300px;
+    height: 50px;
+    background: linear-gradient(rgb(226, 73, 188), rgb(206, 163, 188));
+    text-align: center;
+  }
 }
+.button-pedidos {
+  display: flex;
+  place-content: center;
+  margin-top: 30px;
+}
+
 /*------- (376/768)------*/
 @media (min-width: 376px) and (max-width: 1024px) {
   .pedidos {
@@ -636,7 +652,6 @@ pedidos-cantidad*/
   }
   .pedidos-subtitulos {
     background-color: aqua;
-    border: solid black;
     height: 80px;
     place-self: start;
     padding: 20px;
@@ -651,7 +666,6 @@ pedidos-cantidad*/
   .pedidos-titulo {
     background-color: purple;
     font-size: 1.5rem;
-    border: solid black;
     color: black;
     text-align: center;
     width: 610px;
@@ -659,6 +673,17 @@ pedidos-cantidad*/
   }
   .pedidos-selector {
     width: 398px;
+  }
+  .form-control-pedidos {
+    width: 300px;
+    height: 50px;
+    background: linear-gradient(rgb(226, 73, 188), rgb(206, 163, 188));
+    text-align: center;
+  }
+  .button-pedidos {
+    display: flex;
+    place-content: center;
+    margin-top: 30px;
   }
 }
 

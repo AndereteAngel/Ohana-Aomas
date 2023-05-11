@@ -1,1 +1,11 @@
-
+.title {
+    display: grid;
+    grid-template-rows: 50px;
+    grid-template-columns: 360px;
+    background: linear-gradient(rgb(157, 185, 187), rgb(39, 210, 223));
+    margin: 10px;
+    place-content: center;
+    place-items: center;
+    place-self: center;
+    font-size: 1.5rem;  
+}

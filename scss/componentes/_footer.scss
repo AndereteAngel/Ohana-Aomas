@@ -4,19 +4,19 @@ nav-link
 */
 
 .navfooter {
-    border: solid;
-    list-style: none;
-    background-color: violet;
-    font-size: 0.75rem;
-    width: 260px;
-    margin: 30px;
-    display: inline;
- }
- 
- .navitem-footer {
-    font-size: 1rem;
-    padding: 5px;
-    background-color: grey;
-    border: solid black;
-    border-radius: 10%;
- }
+   display: flex;
+   place-content: end;
+   font-size: 0.5rem;
+   padding-right: 10px;
+   list-style: none;
+   text-align: center;
+}
+
+.nav-item-foot {
+   font-size: 0.7rem;
+   padding: 10px;
+   background: linear-gradient(rgb(226, 73, 188), rgb(206, 163, 188)) ;
+   border-radius: 10%;
+   text-align: center;
+   margin-top: 10px;
+}

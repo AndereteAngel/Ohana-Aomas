@@ -5,16 +5,31 @@ navbar-toggler
 navbar-collapse
 navbar-nav*/
 
-.nav-logo {
+.logo {
+   display: grid;
+   grid-template-rows: 40px 40px;
    width: 100px;
-   height: 90px;
+   height: 80px;
+   padding: 5px;
+   text-decoration: none;
+   text-align: center;
+   place-items: center;
+   color: rgb(117, 3, 70);
+   font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.logo-img {
+   width: 30px;
+   padding: 5px;
+
+
 }
 
 .nav-item {
    font-size: 1rem;
    padding: 5px;
-   background-color: grey;
-   border: solid black;
+   background: linear-gradient(rgb(226, 73, 188), rgb(206, 163, 188));
+   margin: 10px;
    border-radius: 10%;
 }
 
@@ -24,4 +39,9 @@ navbar-nav*/
 
 .navbar {
    height: 100px;
+
+}
+
+nav {
+   background: linear-gradient(rgb(207, 148, 207), rgb(116, 17, 116));
 }

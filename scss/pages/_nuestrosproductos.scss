@@ -5,21 +5,15 @@ cardproducto-img
 cardproducto-text*/
 
 .art {
-   border: solid rgb(8, 8, 8);
-   display: inline-block;
-   background-color: rgb(87, 187, 87);
-
-
-   .cardproducto {
-      color: rgb(8, 8, 8);
-   }
-
+   background: linear-gradient(rgb(157, 185, 187), rgb(39, 210, 223));
+   
    .cardproducto-img {
-      
-      width: 190px;
-      height: 200px;
+      width: 200px;
+      height: 180px;
       margin: 10px;
-      border: solid rgb(8, 8, 8);
+      place-items: center;
+      place-content: center;
+      place-self: center;
    }
 
    .cardproducto-title {
@@ -27,23 +21,15 @@ cardproducto-text*/
       padding: 5px;
       border: solid;
       font-size: 0.75rem;
-      color: rgb(8, 8, 8);
-      background-color: rgb(100, 187, 161);
+      background: linear-gradient(rgb(226, 73, 188), rgb(206, 163, 188)) ;
       text-align: center;
       font-size: 1.5rem;
+      border: none;
    }
 }
 
-.title {
-   background-color: blueviolet;
-   font-size: 1.5rem;
-   border: solid;
-   text-align: center;
-   padding: 10px;
-}
-
 .cardproducto-text {
-   color: black;
+   text-align: center;
    font-size: 1rem;
 }
 
