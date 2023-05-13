@@ -8,62 +8,164 @@ body {
   background-color: rgb(203, 236, 245);
 }
 
-/*navbar
+/*
+@media (max-width:767px)
+@media (min-width:768px) and (max-width:1023px)
+@media (min-width:1024px)
+
+navbar
 nav-logo
 nav-item
 navbar-toggler
 navbar-collapse
 navbar-nav*/
-.logo {
-  display: grid;
-  grid-template-rows: 40px 40px;
-  width: 100px;
-  height: 80px;
-  padding: 5px;
-  text-decoration: none;
-  text-align: center;
-  place-items: center;
-  color: rgb(117, 3, 70);
-  font-family: Georgia, "Times New Roman", Times, serif;
+@media (max-width: 767px) {
+  .navbar {
+    height: 100px;
+    width: 100%;
+  }
+  .logo {
+    display: grid;
+    grid-template-rows: 40px 40px;
+    width: 100px;
+    height: 80px;
+    padding: 5px;
+    text-decoration: none;
+    text-align: center;
+    place-items: center;
+    color: rgb(117, 3, 70);
+    font-family: Georgia, "Times New Roman", Times, serif;
+  }
+  .nav-link {
+    border-radius: 10px;
+  }
+  .logo-img {
+    width: 30px;
+    padding: 5px;
+  }
+  .nav-item {
+    font-size: 1rem;
+    padding: 5px;
+    background: linear-gradient(rgb(226, 73, 188), rgb(206, 163, 188));
+    margin: 10px;
+    border-radius: 10px;
+  }
+  .navbar-collapse {
+    justify-content: end;
+  }
+  nav {
+    background: linear-gradient(rgb(207, 148, 207), rgb(116, 17, 116));
+  }
 }
-
-.logo-img {
-  width: 30px;
-  padding: 5px;
+@media (min-width: 768px) and (max-width: 1023px) {
+  .navbar {
+    height: 100px;
+    width: 100%;
+  }
+  .logo {
+    display: grid;
+    grid-template-rows: 40px 40px;
+    width: 100px;
+    height: 80px;
+    padding: 5px;
+    text-decoration: none;
+    text-align: center;
+    place-items: center;
+    color: rgb(117, 3, 70);
+    font-family: Georgia, "Times New Roman", Times, serif;
+  }
+  .logo-img {
+    width: 30px;
+    padding: 5px;
+  }
+  .nav-item {
+    font-size: 1rem;
+    padding: 5px;
+    background: linear-gradient(rgb(226, 73, 188), rgb(206, 163, 188));
+    margin: 10px;
+    border-radius: 10px;
+  }
+  .navbar-collapse {
+    justify-content: end;
+  }
+  nav {
+    background: linear-gradient(rgb(207, 148, 207), rgb(116, 17, 116));
+  }
 }
-
-.nav-item {
-  font-size: 1rem;
-  padding: 5px;
-  background: linear-gradient(rgb(226, 73, 188), rgb(206, 163, 188));
-  margin: 10px;
-  border-radius: 10%;
+@media (min-width: 1024px) {
+  .logo {
+    display: grid;
+    grid-template-rows: 40px 40px;
+    width: 100px;
+    height: 80px;
+    padding: 5px;
+    text-decoration: none;
+    text-align: center;
+    place-items: center;
+    color: rgb(117, 3, 70);
+    font-family: Georgia, "Times New Roman", Times, serif;
+  }
+  .logo-img {
+    width: 30px;
+    padding: 5px;
+  }
+  .nav-item {
+    font-size: 1rem;
+    padding: 5px;
+    background: linear-gradient(rgb(226, 73, 188), rgb(206, 163, 188));
+    margin: 10px;
+    border-radius: 10px;
+  }
+  .navbar-collapse {
+    justify-content: end;
+  }
+  .navbar {
+    height: 100px;
+    width: 100%;
+  }
+  nav {
+    background: linear-gradient(rgb(207, 148, 207), rgb(116, 17, 116));
+  }
 }
-
-.navbar-collapse {
-  justify-content: end;
+/*@media (max-width:767px)
+@media (min-width:768px) and (max-width:1023px)
+@media (min-width:1024px)*/
+@media (max-width: 767px) {
+  .title {
+    display: grid;
+    grid-template-rows: 50px;
+    grid-template-columns: 360px;
+    background: linear-gradient(rgb(157, 185, 187), rgb(39, 210, 223));
+    place-content: center;
+    place-items: center;
+    place-self: center;
+    font-size: 1.5rem;
+  }
 }
-
-.navbar {
-  height: 100px;
+@media (min-width: 768px) and (max-width: 1023px) {
+  .title {
+    display: grid;
+    grid-template-rows: 50px;
+    grid-template-columns: 768px;
+    background: linear-gradient(rgb(157, 185, 187), rgb(39, 210, 223));
+    place-content: center;
+    place-items: center;
+    place-self: center;
+    font-size: 1.5rem;
+  }
 }
-
-nav {
-  background: linear-gradient(rgb(207, 148, 207), rgb(116, 17, 116));
+@media (min-width: 1024px) {
+  .title {
+    display: grid;
+    grid-template-rows: 50px;
+    grid-template-columns: 1024px;
+    background: linear-gradient(rgb(157, 185, 187), rgb(39, 210, 223));
+    place-content: center;
+    place-items: center;
+    place-self: center;
+    font-size: 1.5rem;
+  }
 }
-
-.title {
-  display: grid;
-  grid-template-rows: 50px;
-  grid-template-columns: 360px;
-  background: linear-gradient(rgb(157, 185, 187), rgb(39, 210, 223));
-  margin: 10px;
-  place-content: center;
-  place-items: center;
-  place-self: center;
-  font-size: 1.5rem;
-}
-
 .carrusel {
   margin: 0;
   color: palevioletred;
@@ -88,50 +190,165 @@ nav {
 /*navfooter
 nav-item
 nav-link
+@media (max-width:767px)
+@media (min-width:768px) and (max-width:1023px)
+@media (min-width:1024px)
 */
-.navfooter {
-  display: flex;
-  place-content: end;
-  font-size: 0.5rem;
-  padding-right: 10px;
-  list-style: none;
-  text-align: center;
+@media (max-width: 767px) {
+  .navfooter {
+    display: flex;
+    place-content: end;
+    font-size: 0.5rem;
+    list-style: none;
+    text-align: center;
+    background-color: black;
+    width: 100%;
+  }
+  .nav-item-foot {
+    font-size: 0.5rem;
+    padding: 10px;
+    background: linear-gradient(rgb(157, 185, 187), rgb(39, 210, 223));
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+  }
+  .icons-foot {
+    width: 12px;
+    height: 12px;
+  }
+  .list-foot {
+    display: grid;
+    grid-template-columns: 360px;
+    grid-template-rows: repeat(4, 40px);
+    padding: 10px;
+    place-content: center;
+    place-items: center;
+    background: linear-gradient(rgb(157, 185, 187), rgb(39, 210, 223));
+  }
+  .list-foot p {
+    margin: 0px;
+    padding: 5px;
+    color: rgb(59, 6, 57);
+    border-radius: 10px;
+    font-size: 0.8rem;
+  }
 }
-
-.nav-item-foot {
-  font-size: 0.7rem;
-  padding: 10px;
-  background: linear-gradient(rgb(226, 73, 188), rgb(206, 163, 188));
-  border-radius: 10%;
-  text-align: center;
-  margin-top: 10px;
+@media (min-width: 768px) and (max-width: 1023px) {
+  .navfooter {
+    display: flex;
+    place-content: end;
+    font-size: 0.5rem;
+    list-style: none;
+    text-align: center;
+    background-color: black;
+    width: 100%;
+    margin: 0px;
+  }
+  .nav-item-foot {
+    font-size: 0.5rem;
+    padding: 10px;
+    background: linear-gradient(rgb(157, 185, 187), rgb(39, 210, 223));
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+  }
+  .icons-foot {
+    width: 12px;
+    height: 12px;
+  }
+  .list-foot {
+    display: grid;
+    grid-template-columns: 768px;
+    grid-template-rows: repeat(4, 40px);
+    padding: 10px;
+    place-content: center;
+    place-items: center;
+    background: linear-gradient(rgb(157, 185, 187), rgb(39, 210, 223));
+  }
+  .list-foot p {
+    margin: 0px;
+    padding: 5px;
+    color: rgb(59, 6, 57);
+    border-radius: 10px;
+    font-size: 0.8rem;
+  }
 }
-
+@media (min-width: 1024px) {
+  .navfooter {
+    display: flex;
+    place-content: end;
+    font-size: 0.5rem;
+    list-style: none;
+    text-align: center;
+    background-color: black;
+    width: 100%;
+  }
+  .nav-item-foot {
+    font-size: 0.5rem;
+    padding: 10px;
+    background: linear-gradient(rgb(157, 185, 187), rgb(39, 210, 223));
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+  }
+  .icons-foot {
+    width: 12px;
+    height: 12px;
+  }
+  .list-foot {
+    display: grid;
+    grid-template-columns: 1004px;
+    grid-template-rows: repeat(4, 40px);
+    padding: 10px;
+    place-content: center;
+    place-items: center;
+    background: linear-gradient(rgb(157, 185, 187), rgb(39, 210, 223));
+  }
+  .list-foot p {
+    margin: 0px;
+    padding: 5px;
+    color: rgb(59, 6, 57);
+    border-radius: 10px;
+    font-size: 0.8rem;
+  }
+}
 /* formingreso
 form-control
 botonindex
 */
 .formingreso {
-  border: solid;
-  background-color: blueviolet;
+  background: linear-gradient(rgb(207, 148, 207), rgb(116, 17, 116));
   text-align: center;
   margin: 30px;
-  font-size: 0.5rem;
+  font-size: 1rem;
   padding: 10px;
-  height: 200px;
+  height: auto;
+}
+.formingreso h2 {
+  font-size: 1rem;
+}
+
+.form-control-index {
+  width: auto;
+  font-size: 1rem;
 }
 
 .botonindex {
   margin: 30px;
-  font-size: 1rem;
+  font-size: 0.75rem;
   color: black;
-  border: solid black;
   place-content: center;
-  place-self: center;
   text-decoration: none;
-  background-color: brown;
-  padding: 10px;
+  background: linear-gradient(rgb(157, 185, 187), rgb(39, 210, 223));
+  padding: 5px;
   display: flex;
+  border-radius: 10px;
 }
 
 /*carrusel
@@ -139,137 +356,135 @@ botonindex
 description: 
 description-titulo
 description-cuerpo
-*/
+
+
+@media (max-width:767px)
+@media (min-width:768px) and (max-width:1023px)
+@media (min-width:1024px)
 /*---------- (376)---------*/
-.description {
-  margin: 10px;
-  display: grid;
-  grid-template-columns: 340px;
-  grid-template-rows: 100px 260px;
-  background-color: rgb(55, 133, 185);
-  place-items: center;
-  place-content: center;
-  color: black;
-}
-
-.description-cuerpo {
-  justify-self: start;
-  color: black;
-  font-size: 1rem;
-  width: auto;
-  text-align: center;
-}
-
-/*--------------*/
-/*tarjetas-produc
-tarjetas-price
-tarjetas-pedidos*/
-.tarjetas-produc {
-  display: grid;
-  grid-template-columns: 340px;
-  grid-template-rows: 80px 200px 80px;
-  column-gap: 10px;
-  margin: 10px;
-  justify-items: center;
-  text-align: center;
-  gap: 10px;
-}
-
-.tarjetas-price {
-  display: grid;
-  grid-template-columns: 340px;
-  grid-template-rows: 80px 200px 80px;
-  column-gap: 10px;
-  margin: 10px;
-  justify-items: center;
-  text-align: center;
-  gap: 10px;
-}
-
-.tarjetas-pedidos {
-  display: grid;
-  grid-template-columns: 340px;
-  grid-template-rows: 80px 200px 80px;
-  column-gap: 10px;
-  margin: 10px;
-  justify-items: center;
-  text-align: center;
-  gap: 10px;
-}
-
-.card-titulo {
-  font-size: 1rem;
-  background-color: rgb(61, 196, 184);
-  margin: 10px;
-  padding: 10px;
-  justify-self: center;
-  align-self: center;
-  height: auto;
-}
-
-.card-img {
-  width: 300px;
-  height: 200px;
-}
-
-.card-description {
-  font-size: 1rem;
-  background-color: rgb(61, 196, 184);
-  margin: 10px;
-  padding: 10px;
-  text-align: center;
-  color: black;
-  height: auto;
-}
-
-/*--------------*/
-.cardlong {
-  display: grid;
-  grid-template-columns: 280px;
-  grid-template-rows: 250px 100px 100px;
-  background-color: rgb(189, 89, 89);
-  color: black;
-  margin: 10px;
-}
-
-.cardlong-titulo {
-  place-self: center;
-  font-size: 1rem;
-  color: rgb(189, 89, 89);
-  background-color: black;
-  padding: 5px;
-  margin-left: 60px;
-}
-
-.cardlong-description {
-  font-size: 1rem;
-  color: black;
-  text-align: center;
-  width: auto;
-  margin-left: 60px;
-}
-
-.cardlong-img {
-  width: 320px;
-  height: 200px;
-  margin: 10px;
-}
-
-/*---------- (376/768)---------*/
-@media (min-width: 376px) and (max-width: 1019px) {
+@media (max-width: 767px) {
   .description {
+    margin: 10px;
     display: grid;
-    grid-template-columns: 768px;
-    grid-template-rows: 70px 120px;
-    gap: 5px;
+    grid-template-columns: 350px;
+    grid-template-rows: 60px 200px;
+    background-color: rgb(55, 133, 185);
+    place-items: center;
+    place-content: center;
+    color: black;
   }
   .description-cuerpo {
+    color: black;
+    font-size: 0.75rem;
+    width: 300px;
+    text-align: center;
+  }
+  /*--------------*/
+  /*tarjetas-produc
+  tarjetas-price
+  tarjetas-pedidos*/
+  .tarjetas-produc {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 80px 200px 80px;
+    column-gap: 10px;
+    margin: 10px;
+    justify-items: center;
+    text-align: center;
+  }
+  .tarjetas-price {
+    display: grid;
+    grid-template-columns: 340px;
+    grid-template-rows: 80px 200px 80px;
+    column-gap: 10px;
+    margin: 10px;
+    justify-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+  .tarjetas-pedidos {
+    display: grid;
+    grid-template-columns: 340px;
+    grid-template-rows: 80px 200px 80px;
+    column-gap: 10px;
+    margin: 10px;
+    justify-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+  .card-titulo {
+    font-size: 1rem;
+    background-color: rgb(61, 196, 184);
+    margin: 10px;
     padding: 10px;
+    justify-self: center;
+    align-self: center;
+    height: auto;
+    border-radius: 10px;
+  }
+  .card-img {
+    width: 300px;
+    height: 200px;
+  }
+  .card-description {
+    font-size: 1rem;
+    background-color: rgb(61, 196, 184);
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    color: black;
+    height: auto;
+    border-radius: 10px;
+  }
+  /*--------------*/
+  .cardlong {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 250px 100px 100px;
+    background-color: rgb(189, 89, 89);
+    color: black;
+    margin: 10px;
+  }
+  .cardlong-titulo {
+    place-self: center;
+    font-size: 1rem;
+    color: rgb(189, 89, 89);
+    background-color: black;
+    padding: 5px;
+  }
+  .cardlong-description {
+    font-size: 1rem;
+    color: black;
+    text-align: center;
+    width: auto;
+  }
+  .cardlong-img {
+    width: 340px;
+    height: 200px;
+  }
+}
+/*---------- (tablet/ordenador)---------*/
+@media (min-width: 768px) and (max-width: 1023px) {
+  .description {
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 70px 120px;
+    background-color: rgb(55, 133, 185);
+    place-items: center;
+    place-content: center;
+    color: black;
+  }
+  .description-cuerpo {
+    color: black;
+    font-size: 0.75rem;
+    width: 728px;
+    text-align: center;
   }
   /*--------------*/
   .tarjetas {
     display: grid;
-    grid-template-columns: repeat(3, 250px);
+    grid-template-columns: repeat(3, 33%);
     grid-template-rows: 300px 150px;
     column-gap: 10px;
     margin: 10px;
@@ -292,12 +507,19 @@ tarjetas-pedidos*/
   /*--------------*/
   .cardlong {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 33%);
     grid-template-rows: auto;
-    border: solid black;
+    background-color: rgb(108, 165, 180);
+    color: black;
+    margin: 10px;
   }
   .cardlong-titulo {
     text-align: center;
+    place-self: center;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
     margin-left: 10px;
   }
   .cardlong-description {
@@ -305,11 +527,11 @@ tarjetas-pedidos*/
     margin-left: 10px;
   }
 }
-@media (min-width: 1020px) {
+@media (min-width: 1024px) {
   .description {
     margin: 10px;
     display: grid;
-    grid-template-columns: 900px;
+    grid-template-columns: 100%;
     grid-template-rows: 60px 200px;
     gap: 10px;
     background-color: rgb(55, 133, 185);
@@ -330,7 +552,7 @@ tarjetas-pedidos*/
   */
   .tarjetas {
     display: grid;
-    grid-template-columns: repeat(3, 300px);
+    grid-template-columns: repeat(3, 33%);
     grid-template-rows: 40px 250px 150px;
   }
   .card-titulo {
@@ -351,7 +573,7 @@ tarjetas-pedidos*/
   cardlong-description*/
   .cardlong {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 33%);
     grid-template-rows: auto;
     background-color: rgb(108, 165, 180);
     color: black;
@@ -375,78 +597,80 @@ tarjetas-pedidos*/
 form
 form-control
 form-cuadro
+
+@media (max-width:767px)
+@media (min-width:768px) and (max-width:1023px)
+@media (min-width:1024px)
 */
-.intro-contact {
-  text-align: center;
-  font-size: 1rem;
-  background: linear-gradient(rgb(207, 148, 207), rgb(116, 17, 116));
-  margin: 10px;
-  width: 340px;
-}
-
-.form-contact {
-  display: grid;
-  grid-template-columns: 340px;
-  grid-template-rows: repeat(3, 1fr) 200px;
-  background-color: rgb(39, 51, 51);
-  place-content: center;
-  place-items: center;
-  width: 340px;
-  margin: 10px;
-  padding: 10px;
-}
-
-.form-control {
-  height: 30px;
-  width: 340px;
-  font-size: 1rem;
-  margin-top: 10px;
-  margin: 10px;
-  place-self: start;
-}
-
-.formcuadro {
-  height: 100px;
-  width: 340px;
-  margin: 10px;
-  text-align: start;
-}
-
-.boton {
-  display: flex;
-  place-content: center;
-}
-
-/*------- (376/768)------*/
-@media (min-width: 376px) and (max-width: 1019px) {
+/*----mobil---*/
+@media (max-width: 767px) {
   .intro-contact {
-    display: grid;
-    grid-template-columns: 700px;
-    grid-template-rows: 100px;
     text-align: center;
-    font-size: 1rem;
-    background-color: rgb(189, 89, 89);
-    margin: 10px;
-    color: black;
-    width: 750px;
+    font-size: 0.75rem;
+    background: linear-gradient(rgb(207, 148, 207), rgb(116, 17, 116));
+    width: 100%;
+    padding: 10px;
+    height: auto;
   }
   .form-contact {
     display: grid;
-    grid-template-columns: 750px;
+    grid-template-columns: 100%;
     grid-template-rows: repeat(3, 1fr) 200px;
-    background-color: rgb(39, 51, 51);
+    background: linear-gradient(rgb(37, 127, 155), rgb(29, 13, 121));
     place-content: center;
     place-items: center;
-    width: 750px;
     margin: 10px;
     padding: 10px;
   }
   .form-control {
-    height: 30px;
+    height: auto;
+    font-size: 1rem;
+    place-self: start;
+    background-color: rgb(159, 192, 192);
+  }
+  .formcuadro {
+    height: 100px;
+    text-align: start;
+  }
+  .boton {
+    margin: 30px;
+    font-size: 0.75rem;
+    color: black;
+    place-content: center;
+    text-decoration: none;
+    background: linear-gradient(rgb(157, 185, 187), rgb(39, 210, 223));
+    padding: 5px;
+    display: flex;
+    border-radius: 10px;
+  }
+}
+/*------- tablet/ordenador -----*/
+@media (min-width: 768px) and (max-width: 1023px) {
+  .intro-contact {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100px;
+    text-align: center;
+    font-size: 1rem;
+    background: linear-gradient(rgb(207, 148, 207), rgb(116, 17, 116));
+    color: black;
+  }
+  .form-contact {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3, 1fr) 200px;
+    background: linear-gradient(rgb(37, 127, 155), rgb(29, 13, 121));
+    place-content: center;
+    place-items: center;
+    margin: 10px;
+    padding: 10px;
+    row-gap: 10px;
+  }
+  .form-control {
+    height: 50px;
     width: 700px;
     font-size: 1rem;
-    background-color: grey;
-    margin-top: 10px;
+    background-color: rgb(159, 192, 192);
     place-self: start;
   }
   .formcuadro {
@@ -454,23 +678,33 @@ form-cuadro
     width: 680px;
     text-align: start;
   }
+  .boton {
+    margin: 30px;
+    font-size: 0.75rem;
+    color: black;
+    place-content: center;
+    text-decoration: none;
+    background: linear-gradient(rgb(157, 185, 187), rgb(39, 210, 223));
+    padding: 5px;
+    display: flex;
+    border-radius: 10px;
+  }
 }
-/*--------1024 o mas------*/
-@media (min-width: 1020px) {
+/*--------ordenador-----*/
+@media (min-width: 1024px) {
   .intro-contact {
     display: grid;
-    grid-template-columns: 1000px;
+    grid-template-columns: 100%;
     grid-template-rows: 100px;
     text-align: center;
     place-items: center;
     font-size: 1rem;
     margin: 10px;
     color: black;
-    width: auto;
   }
   .form-contact {
     display: grid;
-    grid-template-columns: 1000px;
+    grid-template-columns: 100%;
     grid-template-rows: repeat(3, 1fr) 200px;
     background: linear-gradient(rgb(37, 127, 155), rgb(29, 13, 121));
     place-content: center;
@@ -478,20 +712,29 @@ form-cuadro
     margin: 10px;
     padding: 10px;
     padding-top: 30px;
-    width: 1000px;
   }
   .form-control {
-    height: 30px;
+    height: 40px;
+    width: 1000px;
     font-size: 1rem;
-    background: linear-gradient(rgb(207, 148, 207), rgb(116, 17, 116));
-    margin-top: 30px;
+    background-color: rgb(159, 192, 192);
     place-self: start;
-    width: 900px;
   }
   .formcuadro {
     height: 100px;
-    width: 900px;
+    width: 1000px;
     text-align: start;
+  }
+  .boton {
+    margin: 30px;
+    font-size: 0.75rem;
+    color: black;
+    place-content: center;
+    text-decoration: none;
+    background: linear-gradient(rgb(157, 185, 187), rgb(39, 210, 223));
+    padding: 5px;
+    display: flex;
+    border-radius: 10px;
   }
 }
 .table {
@@ -545,59 +788,56 @@ pedidos-subtitulos
 pedidos-img 
 pedidos-selector
 pedidos-cantidad*/
-/*---*/
-.pedidos {
-  display: grid;
-  grid-template-columns: 340px;
-  grid-template-rows: 200px 100px 50px;
-  place-content: center;
-  margin: 10px;
-  gap: 10px;
-}
-
-.pedidos-subtitulos {
-  background: linear-gradient(rgb(6, 224, 240), rgb(4, 151, 65));
-  height: 50px;
-  place-self: start;
-  justify-items: center;
-  padding: 0px;
-  width: 320px;
-  text-align: center;
-}
-
-.pedidos-img {
-  height: 200px;
-  width: 320px;
-}
-
-.pedidos-selector {
-  width: 320px;
-}
-
-.form-control {
-  text-align: center;
-  border: solid black;
-  height: 50px;
-}
-
-.form-control-pedidos {
-  width: 320px;
-  height: 50px;
-  background: linear-gradient(rgb(226, 73, 188), rgb(206, 163, 188));
-  text-align: center;
-}
-
-.button-pedidos {
-  display: flex;
-  place-content: center;
-  margin-top: 30px;
-}
-
-/*--------1020 o mas------*/
-@media (min-width: 1020px) {
+/*@media (max-width:767px)
+@media (min-width:768px) and (max-width:1023px)
+@media (min-width:1024px)*/
+@media (max-width: 767px) {
   .pedidos {
     display: grid;
-    grid-template-columns: 300px 600px;
+    grid-template-columns: 100%;
+    grid-template-rows: 200px 100px 50px;
+    place-content: center;
+    margin: 10px;
+    gap: 10px;
+  }
+  .pedidos-subtitulos {
+    background: linear-gradient(rgb(6, 224, 240), rgb(4, 151, 65));
+    height: 50px;
+    place-self: start;
+    justify-items: center;
+    padding: 0px;
+    width: 100%;
+    text-align: center;
+  }
+  .pedidos-img {
+    height: 200px;
+    width: 340px;
+  }
+  .pedidos-selector {
+    width: 100%;
+  }
+  .form-control {
+    text-align: center;
+    border: solid black;
+    height: 50px;
+  }
+  .form-control-pedidos {
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(rgb(226, 73, 188), rgb(206, 163, 188));
+    text-align: center;
+  }
+  .button-pedidos {
+    display: flex;
+    place-content: center;
+    margin-top: 30px;
+  }
+}
+/*--------tablet/ordenador------*/
+@media (min-width: 768px) and (max-width: 1023px) {
+  .pedidos {
+    display: grid;
+    grid-template-columns: 30% 70%;
     grid-template-rows: 200px 70px;
     color: black;
     margin: 10px;
@@ -606,14 +846,16 @@ pedidos-cantidad*/
   .pedidos-subtitulos {
     background: linear-gradient(rgb(6, 224, 240), rgb(4, 151, 65));
     height: 80px;
+    width: 100%;
     place-self: start;
     padding: 20px;
-    width: 600px;
     text-align: center;
+  }
+  .pedidos-selector {
+    width: 100%;
   }
   .pedidos-img {
     height: 200px;
-    width: 300px;
     justify-self: center;
     border: solid black;
   }
@@ -622,60 +864,59 @@ pedidos-cantidad*/
     font-size: 1.5rem;
     color: black;
     text-align: center;
-    width: 1100px;
-  }
-  .pedidos-selector {
-    width: 300px;
   }
   .form-control-pedidos {
-    width: 300px;
     height: 50px;
     background: linear-gradient(rgb(226, 73, 188), rgb(206, 163, 188));
     text-align: center;
   }
 }
 .button-pedidos {
-  display: flex;
+  margin: 30px;
+  font-size: 0.75rem;
+  color: black;
   place-content: center;
-  margin-top: 30px;
+  text-decoration: none;
+  background: linear-gradient(rgb(157, 185, 187), rgb(39, 210, 223));
+  padding: 5px;
+  display: flex;
+  border-radius: 10px;
 }
 
-/*------- (376/768)------*/
-@media (min-width: 376px) and (max-width: 1024px) {
+/*------- ordenador------*/
+@media (min-width: 1024px) {
   .pedidos {
     display: grid;
-    grid-template-columns: 200px 500px;
+    grid-template-columns: 30% 70%;
     grid-template-rows: 200px 70px;
     color: black;
     margin: 10px;
-    gap: 10px;
   }
   .pedidos-subtitulos {
     background-color: aqua;
     height: 80px;
     place-self: start;
     padding: 20px;
-    width: 400px;
+    width: 100%;
     text-align: center;
   }
   .pedidos-img {
     height: 200px;
-    width: 200px;
     justify-self: center;
+    width: 100%;
   }
   .pedidos-titulo {
     background-color: purple;
     font-size: 1.5rem;
     color: black;
     text-align: center;
-    width: 610px;
     margin: 10px;
   }
   .pedidos-selector {
-    width: 398px;
+    width: 100%;
   }
   .form-control-pedidos {
-    width: 300px;
+    width: 100%;
     height: 50px;
     background: linear-gradient(rgb(226, 73, 188), rgb(206, 163, 188));
     text-align: center;

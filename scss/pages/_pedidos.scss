@@ -5,61 +5,66 @@ pedidos-img
 pedidos-selector
 pedidos-cantidad*/
 
-/*---*/
+/*@media (max-width:767px)
+@media (min-width:768px) and (max-width:1023px)
+@media (min-width:1024px)*/
 
-.pedidos {
-    display: grid;
-    grid-template-columns: 340px;
-    grid-template-rows: 200px 100px 50px;
-    place-content: center;
-    margin: 10px;
-    gap: 10px;
-}
+@media (max-width:767px) {
 
-.pedidos-subtitulos {
-    background: linear-gradient(rgb(6, 224, 240), rgb(4, 151, 65));
-    height: 50px;
-    place-self: start;
-    justify-items: center;
-    padding: 0px;
-    width: 320px;
-    text-align: center;
-}
-
-.pedidos-img {
-    height: 200px;
-    width: 320px;
-}
-
-.pedidos-selector {
-    width: 320px;
-}
-
-.form-control {
-    text-align: center;
-    border: solid black;
-    height: 50px;
-}
-
-.form-control-pedidos {
-    width: 320px;
-    height: 50px;
-    background: linear-gradient(rgb(226, 73, 188), rgb(206, 163, 188));
-    text-align: center;
-}
-
-.button-pedidos {
-    display: flex;
-    place-content: center;
-    margin-top: 30px;
-}
-
-/*--------1020 o mas------*/
-
-@media (min-width:1020px) {
     .pedidos {
         display: grid;
-        grid-template-columns: 300px 600px;
+        grid-template-columns: 100%;
+        grid-template-rows: 200px 100px 50px;
+        place-content: center;
+        margin: 10px;
+        gap: 10px;
+    }
+
+    .pedidos-subtitulos {
+        background: linear-gradient(rgb(6, 224, 240), rgb(4, 151, 65));
+        height: 50px;
+        place-self: start;
+        justify-items: center;
+        padding: 0px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .pedidos-img {
+        height: 200px;
+        width: 340px;
+    }
+
+    .pedidos-selector {
+        width: 100%;
+    }
+
+    .form-control {
+        text-align: center;
+        border: solid black;
+        height: 50px;
+    }
+
+    .form-control-pedidos {
+        width: 100%;
+        height: 50px;
+        background: linear-gradient(rgb(226, 73, 188), rgb(206, 163, 188));
+        text-align: center;
+    }
+
+    .button-pedidos {
+        display: flex;
+        place-content: center;
+        margin-top: 30px;
+    }
+}
+
+/*--------tablet/ordenador------*/
+
+@media (min-width:768px) and (max-width:1023px) {
+    .pedidos {
+        display: grid;
+        grid-template-columns: 30% 70%;
         grid-template-rows: 200px 70px;
         color: black;
         margin: 10px;
@@ -69,15 +74,18 @@ pedidos-cantidad*/
     .pedidos-subtitulos {
         background: linear-gradient(rgb(6, 224, 240), rgb(4, 151, 65));
         height: 80px;
+        width: 100%;
         place-self: start;
         padding: 20px;
-        width: 600px;
         text-align: center;
+    }
+
+    .pedidos-selector {
+        width: 100%;
     }
 
     .pedidos-img {
         height: 200px;
-        width: 300px;
         justify-self: center;
         border: solid black;
     }
@@ -87,15 +95,10 @@ pedidos-cantidad*/
         font-size: 1.5rem;
         color: black;
         text-align: center;
-        width: 1100px;
-    }
 
-    .pedidos-selector {
-        width: 300px;
     }
 
     .form-control-pedidos {
-        width: 300px;
         height: 50px;
         background: linear-gradient(rgb(226, 73, 188), rgb(206, 163, 188));
         text-align: center;
@@ -103,21 +106,27 @@ pedidos-cantidad*/
 }
 
 .button-pedidos {
-    display: flex;
+    margin: 30px;
+    font-size: 0.75rem;
+    color: black;
     place-content: center;
-    margin-top: 30px;
+    text-decoration: none;
+    background: linear-gradient(rgb(157, 185, 187), rgb(39, 210, 223));
+    padding: 5px;
+    display: flex;
+    border-radius: 10px;
 }
 
-/*------- (376/768)------*/
+/*------- ordenador------*/
 
-@media (min-width:376px) and (max-width:1024px) {
+@media (min-width:1024px) {
+
     .pedidos {
         display: grid;
-        grid-template-columns: 200px 500px;
+        grid-template-columns: 30% 70%;
         grid-template-rows: 200px 70px;
         color: black;
         margin: 10px;
-        gap: 10px;
     }
 
     .pedidos-subtitulos {
@@ -125,14 +134,14 @@ pedidos-cantidad*/
         height: 80px;
         place-self: start;
         padding: 20px;
-        width: 400px;
+        width: 100%;
         text-align: center;
     }
 
     .pedidos-img {
         height: 200px;
-        width: 200px;
         justify-self: center;
+        width: 100%;
     }
 
     .pedidos-titulo {
@@ -140,16 +149,15 @@ pedidos-cantidad*/
         font-size: 1.5rem;
         color: black;
         text-align: center;
-        width: 610px;
         margin: 10px;
     }
 
     .pedidos-selector {
-        width: 398px;
+        width: 100%;
     }
 
     .form-control-pedidos {
-        width: 300px;
+        width: 100%;
         height: 50px;
         background: linear-gradient(rgb(226, 73, 188), rgb(206, 163, 188));
         text-align: center;

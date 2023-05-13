@@ -4,25 +4,31 @@ botonindex
 */
 
 .formingreso {
-   border: solid;
-   background-color: blueviolet;
+   background: linear-gradient(rgb(207, 148, 207), rgb(116, 17, 116));
    text-align: center;
    margin: 30px;
-   font-size: 0.5rem;
+   font-size: 1rem;
    padding: 10px;
-   height: 200px;
+   height: auto;
+
+   h2 {
+      font-size: 1rem;
+   }
+}
+
+.form-control-index {
+   width: auto;
+   font-size: 1rem;
 }
 
 .botonindex {
    margin: 30px;
-   font-size: 1rem;
+   font-size: 0.75rem;
    color: black;
-   border: solid black;
    place-content: center;
-   place-self: center;
    text-decoration: none;
-   background-color: brown;
-   padding: 10px;
+   background: linear-gradient(rgb(157, 185, 187), rgb(39, 210, 223));
+   padding: 5px;
    display: flex;
+   border-radius: 10px;
 }
-

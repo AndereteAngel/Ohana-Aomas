@@ -1,11 +1,43 @@
-.title {
-    display: grid;
-    grid-template-rows: 50px;
-    grid-template-columns: 360px;
-    background: linear-gradient(rgb(157, 185, 187), rgb(39, 210, 223));
-    margin: 10px;
-    place-content: center;
-    place-items: center;
-    place-self: center;
-    font-size: 1.5rem;  
+/*@media (max-width:767px)
+@media (min-width:768px) and (max-width:1023px)
+@media (min-width:1024px)*/
+
+
+@media (max-width:767px) {
+    .title {
+        display: grid;
+        grid-template-rows: 50px;
+        grid-template-columns: 360px;
+        background: linear-gradient(rgb(157, 185, 187), rgb(39, 210, 223));
+        place-content: center;
+        place-items: center;
+        place-self: center;
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width:768px) and (max-width:1023px) {
+    .title {
+        display: grid;
+        grid-template-rows: 50px;
+        grid-template-columns: 768px;
+        background: linear-gradient(rgb(157, 185, 187), rgb(39, 210, 223));
+        place-content: center;
+        place-items: center;
+        place-self: center;
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width:1024px) {
+    .title {
+        display: grid;
+        grid-template-rows: 50px;
+        grid-template-columns: 1024px;
+        background: linear-gradient(rgb(157, 185, 187), rgb(39, 210, 223));
+        place-content: center;
+        place-items: center;
+        place-self: center;
+        font-size: 1.5rem;
+    }
 }

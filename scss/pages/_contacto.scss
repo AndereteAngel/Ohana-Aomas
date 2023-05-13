@@ -4,84 +4,92 @@
 form
 form-control
 form-cuadro
+
+@media (max-width:767px)
+@media (min-width:768px) and (max-width:1023px)
+@media (min-width:1024px)
 */
 
-.intro-contact {
-    text-align: center;
-    font-size: 1rem;
-    background: linear-gradient(rgb(207, 148, 207), rgb(116, 17, 116));
-    margin: 10px;
-    width: 340px;
-}
+/*----mobil---*/
 
-
-.form-contact {
-    display: grid;
-    grid-template-columns: 340px;
-    grid-template-rows: repeat(3, 1fr) 200px;
-    background-color: rgb(39, 51, 51);
-    place-content: center;
-    place-items: center;
-    width: 340px;
-    margin: 10px;
-    padding: 10px;
-}
-
-.form-control {
-    height: 30px;
-    width: 340px;
-    font-size: 1rem;
-    margin-top: 10px;
-    margin: 10px;
-    place-self: start;
-}
-
-.formcuadro {
-    height: 100px;
-    width: 340px;
-    margin: 10px;
-    text-align: start;
-}
-
-.boton {
-    display: flex;
-    place-content: center;
-}
-
-/*------- (376/768)------*/
-
-@media (min-width:376px) and (max-width:1019px) {
-
+@media (max-width:767px) {
     .intro-contact {
-        display: grid;
-        grid-template-columns: 700px;
-        grid-template-rows: 100px;
         text-align: center;
-        font-size: 1rem;
-        background-color: rgb(189, 89, 89);
-        margin: 10px;
-        color: black;
-        width: 750px;
+        font-size: 0.75rem;
+        background: linear-gradient(rgb(207, 148, 207), rgb(116, 17, 116));
+        width: 100%;
+        padding: 10px;
+        height: auto;
     }
+
 
     .form-contact {
         display: grid;
-        grid-template-columns: 750px;
+        grid-template-columns: 100%;
         grid-template-rows: repeat(3, 1fr) 200px;
-        background-color: rgb(39, 51, 51);
+        background: linear-gradient(rgb(37, 127, 155), rgb(29, 13, 121));
         place-content: center;
         place-items: center;
-        width: 750px;
         margin: 10px;
         padding: 10px;
     }
 
     .form-control {
-        height: 30px;
+        height: auto;
+        font-size: 1rem;
+        place-self: start;
+        background-color: rgb(159, 192, 192);
+    }
+
+    .formcuadro {
+        height: 100px;
+        text-align: start;
+    }
+
+    .boton {
+        margin: 30px;
+        font-size: 0.75rem;
+        color: black;
+        place-content: center;
+        text-decoration: none;
+        background: linear-gradient(rgb(157, 185, 187), rgb(39, 210, 223));
+        padding: 5px;
+        display: flex;
+        border-radius: 10px;
+    }
+}
+
+/*------- tablet/ordenador -----*/
+
+@media (min-width:768px) and (max-width:1023px) {
+
+    .intro-contact {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 100px;
+        text-align: center;
+        font-size: 1rem;
+        background: linear-gradient(rgb(207, 148, 207), rgb(116, 17, 116));
+        color: black;
+    }
+
+    .form-contact {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(3, 1fr) 200px;
+        background: linear-gradient(rgb(37, 127, 155), rgb(29, 13, 121));
+        place-content: center;
+        place-items: center;
+        margin: 10px;
+        padding: 10px;
+        row-gap: 10px;
+    }
+
+    .form-control {
+        height: 50px;
         width: 700px;
         font-size: 1rem;
-        background-color: grey;
-        margin-top: 10px;
+        background-color: rgb(159, 192, 192);
         place-self: start;
     }
 
@@ -90,49 +98,70 @@ form-cuadro
         width: 680px;
         text-align: start;
     }
+
+    .boton {
+        margin: 30px;
+        font-size: 0.75rem;
+        color: black;
+        place-content: center;
+        text-decoration: none;
+        background: linear-gradient(rgb(157, 185, 187), rgb(39, 210, 223));
+        padding: 5px;
+        display: flex;
+        border-radius: 10px;
+    }
 }
 
-/*--------1024 o mas------*/
+/*--------ordenador-----*/
 
-@media (min-width:1020px) {
+@media (min-width:1024px) {
 
     .intro-contact {
         display: grid;
-        grid-template-columns: 1000px;
+        grid-template-columns: 100%;
         grid-template-rows: 100px;
         text-align: center;
         place-items: center;
         font-size: 1rem;
         margin: 10px;
         color: black;
-        width: auto;
     }
 
     .form-contact {
         display: grid;
-        grid-template-columns: 1000px;
+        grid-template-columns: 100%;
         grid-template-rows: repeat(3, 1fr) 200px;
-        background: linear-gradient(rgb(37, 127, 155), rgb(29, 13, 121)) ;
+        background: linear-gradient(rgb(37, 127, 155), rgb(29, 13, 121));
         place-content: center;
         place-items: center;
         margin: 10px;
         padding: 10px;
         padding-top: 30px;
-        width: 1000px;
     }
 
     .form-control {
-        height: 30px;
-        font-size: 1rem;  
-        background: linear-gradient(rgb(207, 148, 207), rgb(116, 17, 116));
-        margin-top: 30px;
+        height: 40px;
+        width: 1000px;
+        font-size: 1rem;
+        background-color: rgb(159, 192, 192);
         place-self: start;
-        width: 900px;
     }
 
     .formcuadro {
         height: 100px;
-        width: 900px;
+        width: 1000px;
         text-align: start;
+    }
+
+    .boton {
+        margin: 30px;
+        font-size: 0.75rem;
+        color: black;
+        place-content: center;
+        text-decoration: none;
+        background: linear-gradient(rgb(157, 185, 187), rgb(39, 210, 223));
+        padding: 5px;
+        display: flex;
+        border-radius: 10px;
     }
 }

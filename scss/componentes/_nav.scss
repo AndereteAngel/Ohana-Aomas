@@ -1,47 +1,140 @@
-/*navbar
+/*
+@media (max-width:767px)
+@media (min-width:768px) and (max-width:1023px)
+@media (min-width:1024px)
+
+navbar
 nav-logo
 nav-item
 navbar-toggler
 navbar-collapse
 navbar-nav*/
 
-.logo {
-   display: grid;
-   grid-template-rows: 40px 40px;
-   width: 100px;
-   height: 80px;
-   padding: 5px;
-   text-decoration: none;
-   text-align: center;
-   place-items: center;
-   color: rgb(117, 3, 70);
-   font-family: Georgia, 'Times New Roman', Times, serif;
+@media (max-width:767px) {
+
+   .navbar {
+      height: 100px;
+      width: 100%;
+   }
+
+   .logo {
+      display: grid;
+      grid-template-rows: 40px 40px;
+      width: 100px;
+      height: 80px;
+      padding: 5px;
+      text-decoration: none;
+      text-align: center;
+      place-items: center;
+      color: rgb(117, 3, 70);
+      font-family: Georgia, 'Times New Roman', Times, serif;
+   }
+
+   .nav-link {
+      border-radius: 10px;
+   }
+
+   .logo-img {
+      width: 30px;
+      padding: 5px;
+   }
+
+   .nav-item {
+      font-size: 1rem;
+      padding: 5px;
+      background: linear-gradient(rgb(226, 73, 188), rgb(206, 163, 188));
+      margin: 10px;
+      border-radius: 10px;
+   }
+
+   .navbar-collapse {
+      justify-content: end;
+   }
+
+   nav {
+      background: linear-gradient(rgb(207, 148, 207), rgb(116, 17, 116));
+   }
 }
 
-.logo-img {
-   width: 30px;
-   padding: 5px;
+@media (min-width:768px) and (max-width:1023px) {
 
+   .navbar {
+      height: 100px;
+      width: 100%;
+   }
 
+   .logo {
+      display: grid;
+      grid-template-rows: 40px 40px;
+      width: 100px;
+      height: 80px;
+      padding: 5px;
+      text-decoration: none;
+      text-align: center;
+      place-items: center;
+      color: rgb(117, 3, 70);
+      font-family: Georgia, 'Times New Roman', Times, serif;
+   }
+
+   .logo-img {
+      width: 30px;
+      padding: 5px;
+   }
+
+   .nav-item {
+      font-size: 1rem;
+      padding: 5px;
+      background: linear-gradient(rgb(226, 73, 188), rgb(206, 163, 188));
+      margin: 10px;
+      border-radius: 10px;
+   }
+
+   .navbar-collapse {
+      justify-content: end;
+   }
+
+   nav {
+      background: linear-gradient(rgb(207, 148, 207), rgb(116, 17, 116));
+   }
 }
 
-.nav-item {
-   font-size: 1rem;
-   padding: 5px;
-   background: linear-gradient(rgb(226, 73, 188), rgb(206, 163, 188));
-   margin: 10px;
-   border-radius: 10%;
-}
+@media (min-width:1024px) {
+   .logo {
+      display: grid;
+      grid-template-rows: 40px 40px;
+      width: 100px;
+      height: 80px;
+      padding: 5px;
+      text-decoration: none;
+      text-align: center;
+      place-items: center;
+      color: rgb(117, 3, 70);
+      font-family: Georgia, 'Times New Roman', Times, serif;
+   }
 
-.navbar-collapse {
-   justify-content: end;
-}
+   .logo-img {
+      width: 30px;
+      padding: 5px;
+   }
 
-.navbar {
-   height: 100px;
+   .nav-item {
+      font-size: 1rem;
+      padding: 5px;
+      background: linear-gradient(rgb(226, 73, 188), rgb(206, 163, 188));
+      margin: 10px;
+      border-radius: 10px;
+   }
 
-}
+   .navbar-collapse {
+      justify-content: end;
+   }
 
-nav {
-   background: linear-gradient(rgb(207, 148, 207), rgb(116, 17, 116));
+   .navbar {
+      height: 100px;
+      width: 100%;
+   }
+
+   nav {
+      background: linear-gradient(rgb(207, 148, 207), rgb(116, 17, 116));
+   }
 }
