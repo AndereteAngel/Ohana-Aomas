@@ -166,27 +166,6 @@ navbar-nav*/
     font-size: 1.5rem;
   }
 }
-.carrusel {
-  margin: 0;
-  color: palevioletred;
-}
-.carrusel title {
-  color: palevioletred;
-  text-align: center;
-  margin: 0px;
-  padding: 0px;
-  font-size: 0.4rem;
-  margin: 10px;
-}
-.carrusel title .carrusel-titulo {
-  margin: 0px;
-  align-items: center;
-}
-.carrusel img {
-  height: 200px;
-  color: palevioletred;
-}
-
 /*navfooter
 nav-item
 nav-link
@@ -226,8 +205,6 @@ nav-link
     place-content: center;
     place-items: center;
     background: linear-gradient(rgb(157, 185, 187), rgb(39, 210, 223));
-    width: 340px;
-    margin: 10px;
   }
   .list-foot p {
     margin: 0px;
