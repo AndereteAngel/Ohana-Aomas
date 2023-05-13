@@ -364,18 +364,17 @@ description-cuerpo
 /*---------- (376)---------*/
 @media (max-width: 767px) {
   .description {
-    margin: 10px;
     display: grid;
-    grid-template-columns: 350px;
-    grid-template-rows: 60px 200px;
+    grid-template-columns: 340px;
+    grid-template-rows: 60px 250px;
     background-color: rgb(55, 133, 185);
     place-items: center;
     place-content: center;
-    color: black;
+    color: rgb(5, 0, 0);
   }
   .description-cuerpo {
-    color: black;
-    font-size: 0.75rem;
+    color: rgb(8, 1, 1);
+    font-size: 1rem;
     width: 300px;
     text-align: center;
   }
@@ -386,10 +385,8 @@ description-cuerpo
   .tarjetas-produc {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 80px 200px 80px;
-    column-gap: 10px;
-    margin: 10px;
-    justify-items: center;
+    grid-template-rows: 100px 200px 100px;
+    place-items: center;
     text-align: center;
   }
   .tarjetas-price {
@@ -460,7 +457,6 @@ description-cuerpo
   }
   .cardlong-img {
     width: 340px;
-    height: 200px;
   }
 }
 /*---------- (tablet/ordenador)---------*/
