@@ -13,7 +13,7 @@ description-cuerpo
 
    .description {
       display: grid;
-      grid-template-columns: 340px;
+      grid-template-columns: 100%;
       grid-template-rows: 60px 250px;
       background-color: rgb(55, 133, 185);
       place-items: center;
@@ -43,24 +43,18 @@ tarjetas-pedidos*/
 
    .tarjetas-price {
       display: grid;
-      grid-template-columns: 340px;
-      grid-template-rows: 80px 200px 80px;
-      column-gap: 10px;
-      margin: 10px;
-      justify-items: center;
+      grid-template-columns: 100%;
+      grid-template-rows: 100px 200px 100px;
+      place-items: center;
       text-align: center;
-      gap: 10px;
    }
 
    .tarjetas-pedidos {
       display: grid;
-      grid-template-columns: 340px;
-      grid-template-rows: 80px 200px 80px;
-      column-gap: 10px;
-      margin: 10px;
-      justify-items: center;
+      grid-template-columns: 100%;
+      grid-template-rows: 100px 200px 100px;
+      place-items: center;
       text-align: center;
-      gap: 10px;
    }
 
    .card-titulo {
@@ -113,6 +107,7 @@ tarjetas-pedidos*/
       font-size: 1rem;
       color: black;
       text-align: center;
+      padding: 5px;
       width: auto;
    }
 

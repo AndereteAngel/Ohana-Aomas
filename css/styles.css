@@ -220,12 +220,14 @@ nav-link
   }
   .list-foot {
     display: grid;
-    grid-template-columns: 360px;
+    grid-template-columns: 100%;
     grid-template-rows: repeat(4, 40px);
     padding: 10px;
     place-content: center;
     place-items: center;
     background: linear-gradient(rgb(157, 185, 187), rgb(39, 210, 223));
+    width: 340px;
+    margin: 10px;
   }
   .list-foot p {
     margin: 0px;
@@ -365,7 +367,7 @@ description-cuerpo
 @media (max-width: 767px) {
   .description {
     display: grid;
-    grid-template-columns: 340px;
+    grid-template-columns: 100%;
     grid-template-rows: 60px 250px;
     background-color: rgb(55, 133, 185);
     place-items: center;
@@ -391,23 +393,17 @@ description-cuerpo
   }
   .tarjetas-price {
     display: grid;
-    grid-template-columns: 340px;
-    grid-template-rows: 80px 200px 80px;
-    column-gap: 10px;
-    margin: 10px;
-    justify-items: center;
+    grid-template-columns: 100%;
+    grid-template-rows: 100px 200px 100px;
+    place-items: center;
     text-align: center;
-    gap: 10px;
   }
   .tarjetas-pedidos {
     display: grid;
-    grid-template-columns: 340px;
-    grid-template-rows: 80px 200px 80px;
-    column-gap: 10px;
-    margin: 10px;
-    justify-items: center;
+    grid-template-columns: 100%;
+    grid-template-rows: 100px 200px 100px;
+    place-items: center;
     text-align: center;
-    gap: 10px;
   }
   .card-titulo {
     font-size: 1rem;
@@ -453,6 +449,7 @@ description-cuerpo
     font-size: 1rem;
     color: black;
     text-align: center;
+    padding: 5px;
     width: auto;
   }
   .cardlong-img {
